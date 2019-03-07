@@ -58,9 +58,9 @@ class SecurityPlugin extends Plugin
 			//Public area resources
 			$publicResources = [
 				'index'      => ['index'],
-				'errors'     => ['show401', 'show404', 'show500'],
-				'web' 		 => ['index']
+				'web'		 => ['index']	
 			];
+			
 			foreach ($publicResources as $resource => $actions) {
 				$acl->addResource(new Resource($resource), $actions);
 			}
