@@ -1,10 +1,10 @@
 <?php
 
-class PortfolioController extends ControllerBase
+class WebController extends ControllerBase
 {
     public function initialize()
     {
-        $this->tag->setTitle('Portafolio web');
+        $this->tag->setTitle('');
         //parent::initialize();
     }
 
