@@ -55,10 +55,15 @@
             position: fixed;
             margin-top: 10px;
             left: 10px;
-            width: 60%;
+            width: 100%;
             font-family: Arial;
             font-size: 20px;
             z-index: 10;
+            padding: 2%;
+        }
+
+        .main-block {
+            width: 13%;
         }
         
         .menu-up {
@@ -173,12 +178,37 @@
 </head>
 
 <body>  
-
-    <div class="menu">
-        <a href="#view-1" class="vs-anchor"><button>View 1</button></a>
-        <a href="#view-2" class="vs-anchor"><button>View 2</button></a>
-        <a href="#view-3" class="vs-anchor"><button>View 3</button></a>
-        <a href="#view-4" class="vs-anchor"><button>View 4</button></a>
+    <div class="row menu">
+        <a href="#view-1" class="vs-anchor">
+            <div class="col-md-2 col-md-offset-2 main-block">
+                <label>1. Sobre mi</label>
+                <label>Mira aqui una breve descripción sobre mi.</label>
+            </div>
+        </a>
+        <a href="#view-2" class="vs-anchor">
+            <div class="col-md-2 main-block">
+                <label>2. Estudios y experiencia</label>
+                <label>Conoce mi trayectoria academica y experiencia laboral.</label>
+            </div>
+        </a>
+        <a href="#view-3" class="vs-anchor">
+            <div class="col-md-2 main-block">
+                <label>3. Portafolio</label>
+                <label>¡Basta de palabras! mira mis trabajos aqui.</label>
+            </div>
+        </a>
+        <a href="#view-4" class="vs-anchor">
+            <div class="col-md-2 main-block">
+                <label>4. Contacto</label>
+                <label>Estoy listo para comenzar cuando decidas.</label>
+            </div>
+        </a>
+        <a href="#view-4" class="vs-anchor">
+            <div class="col-md-2 main-block">
+                <label>1. Sobre mi</label>
+                <label>Mira aqui una breve descripción sobre mi.</label>
+            </div>
+        </a>
     </div>
 
     <div class="menu-down">
