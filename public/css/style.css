@@ -1,0 +1,250 @@
+.view-- {
+    background: #00baaa;
+    background: -webkit-linear-gradient(#00baaa, #7af4e9);
+    background: -o-linear-gradient(#00baaa, #7af4e9);
+    background: -moz-linear-gradient(#00baaa, #7af4e9);
+    background: linear-gradient(#00baaa, #7af4e9);
+}
+
+.view1 {
+    background-image: url(http://www.fondox.net/wallpapers/textura-de-color-negro-198.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    padding-top: 15%;
+}
+
+
+.view2 {
+    background: #26bece;
+    background: -webkit-linear-gradient(#7af4e9, #26bece);
+    background: -o-linear-gradient(#7af4e9, #26bece);
+    background: -moz-linear-gradient(#7af4e9, #26bece);
+    background: linear-gradient(#7af4e9, #26bece);
+}
+
+.view3 {
+    background: #26bece;
+    background: -webkit-linear-gradient(#26bece, #1c93a0);
+    background: -o-linear-gradient(#26bece, #1c93a0);
+    background: -moz-linear-gradient(#26bece, #1c93a0);
+    background: linear-gradient(#26bece, #1c93a0);
+}
+
+.view4 {
+    background: #26bece;
+    background: -webkit-linear-gradient(#26bece, #1c93a0);
+    background: -o-linear-gradient(#26bece, #1c93a0);
+    background: -moz-linear-gradient(#26bece, #1c93a0);
+    background: linear-gradient(#26bece, #1c93a0);
+}
+/* Styles specific for this example */
+
+a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #000;
+}
+
+.menu {
+    position: fixed;
+    margin-top: 10px;
+    left: 10px;
+    width: 100%;
+    font-family: Arial;
+    font-size: 20px;
+    z-index: 10;
+    padding: 2%;
+    padding-left: 17%;
+    padding-right: 13%;
+}
+
+.option {
+    padding-top: 1%
+}
+
+.menu-up {
+    position: fixed;
+    top: 10px;
+    margin-left: -16px;
+    left: 50%;
+    width: 32px;
+    font-family: Arial;
+    font-size: 20px;
+    z-index: 10;
+}
+
+.menu-down {
+    position: fixed;
+    bottom: 10px;
+    margin-left: -100px;
+    left: 50%;
+    width: 200px;
+    font-family: Arial;
+    font-size: 20px;
+    z-index: 10;
+    text-align: center;
+}
+
+.forkme {
+    position: fixed;
+    z-index: 30;
+    top: 0;
+    right: 0;
+    border: 0;
+}
+
+.logo {
+    position: fixed;
+    z-index: 30;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -150px;
+    max-width: 288px;
+    max-height: 288px;
+    background: rgba(255, 255, 255, .5);
+    padding: 10px 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 10px 10px 63px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 63px -4px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 63px -4px rgba(0, 0, 0, 0.75);
+    -webkit-transition: box-shadow .5s ease;
+    -moz-transition: box-shadow .5s ease;
+    -o-transition: box-shadow .5s ease;
+    transition: box-shadow .5s ease;
+}
+
+.logo:hover {
+    -webkit-box-shadow: 5px 5px 30px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 5px 5px 30px -4px rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 5px 30px -4px rgba(0, 0, 0, 0.75);
+}
+
+.logo:active {
+    -webkit-box-shadow: 0 0 rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0 0 rgba(0, 0, 0, 0.75);
+    box-shadow: 0 0 rgba(0, 0, 0, 0.75);
+}
+
+.inscription {
+    width: 80vw;
+    min-width: 600px;
+    max-width: 1300px;
+}
+
+.up:hover,
+.down:hover {
+    -webkit-filter: opacity(.5);
+    -moz-filter: opacity(.5);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: opacity(.5);
+}
+
+input[type="button"] {
+    -webkit-appearance: none;
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px #000;
+}
+/* Extends predefined vs-center class */
+
+.vs-center {
+    position: fixed;
+    font-family: Arial, Tahoma;
+    font-size: 50px;
+    color: rgba(0, 0, 0, .6)
+}
+
+.vs-center-fixed {
+    position: fixed;
+    font-family: Arial, Tahoma;
+    font-size: 50px;
+    color: rgba(0, 0, 0, .6)
+}
+
+.description {
+    font-size: 12px;
+    color: #aec1e3;
+}
+
+.title {
+    font-size: 15px;
+    color: #aec1e3;
+}
+
+.text1-view-1 {
+    color: white;
+    font-size: 35px;
+}
+
+.text2-view-1 {
+    color: white;
+    font-size: 28px;
+}
+
+.text3-view-1 {
+    color:#861167;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.text4-view-1 {
+    color: #aec1e3;
+    font-size: 24px;
+    line-height : 25px;
+}
+
+label {
+    font-weight: 100;
+}
+
+.contact {
+    width: 100%;
+    padding-left: 28%;
+    padding-right: 28%;
+    padding-top: 6%;
+}
+
+.contact1 {
+    width: 100%;
+    padding-left: 28%;
+    padding-right: 28%;
+    padding-top: 2%;
+}
+
+.btn-contact {
+    width: 356px;
+    height: 50px;
+    border: 1px solid #aec1e3;
+    border-radius: 13px;
+    color: #aec1e3;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #5d687b8f;
+}
+
+.contact-div {
+    padding-left: 7%;
+}
+
+.btn-whatsapp {
+    height: 50px;
+    border-radius: 13px;
+}
+
+.txt-whatsapp {
+    color: #4cae4c;
+    font-size: 14px;
+    padding-top: 11%; 
+}
