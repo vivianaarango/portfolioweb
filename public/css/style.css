@@ -17,11 +17,11 @@
 
 
 .view2 {
-    background: #26bece;
-    background: -webkit-linear-gradient(#7af4e9, #26bece);
-    background: -o-linear-gradient(#7af4e9, #26bece);
-    background: -moz-linear-gradient(#7af4e9, #26bece);
-    background: linear-gradient(#7af4e9, #26bece);
+    background: #ffffff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
 }
 
 .view3 {
@@ -218,14 +218,14 @@ label {
 
 .contact1 {
     width: 100%;
-    padding-left: 28%;
+    padding-left: 31%;
     padding-right: 28%;
-    padding-top: 2%;
+    padding-top: 4%;
 }
 
 .btn-contact {
-    width: 356px;
-    height: 50px;
+    width: 100%;
+    height: 60px;
     border: 1px solid #aec1e3;
     border-radius: 13px;
     color: #aec1e3;
@@ -235,16 +235,53 @@ label {
 }
 
 .contact-div {
-    padding-left: 7%;
+    line-height: 10px;
+    padding-top: 1.5%;
 }
 
 .btn-whatsapp {
-    height: 50px;
+    height: 60px;
     border-radius: 13px;
 }
 
 .txt-whatsapp {
     color: #4cae4c;
-    font-size: 14px;
-    padding-top: 11%; 
+    font-size: 14px; 
+}
+
+.menu-down-view-1 {
+    text-align: center;
+    padding-top: 5%;
+}
+
+@media screen and (max-width : 2560px){
+    .contact-div {
+        padding-left: 4%;
+    }
+}
+
+@media screen and (max-width : 1660px){
+    .contact-div {
+        padding-left: 5%;
+    }
+}
+
+@media screen and (max-width : 1510px){
+    .contact-div {
+        padding-left: 4%;
+    }
+
+    .contact-div-1 {
+        padding-right: 8%;
+    }
+}
+
+@media screen and (max-width : 1410px){
+    .contact-div {
+        padding-left: 2%;
+    }
+
+    .contact-div-1 {
+        padding-right: 12%;
+    }
 }
