@@ -6,16 +6,87 @@
     background: linear-gradient(#00baaa, #7af4e9);
 }
 
+/* view 1 */
 .view1 {
-    background-image: url(http://www.fondox.net/wallpapers/textura-de-color-negro-198.jpg);
+    background-image: url(../images/Fondo01.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
-    padding-top: 15%;
 }
 
+.contact {
+    width: 100%;
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-top: 6%;
+}
 
+.contact1 {
+    width: 100%;
+    padding-left: 32%;
+    padding-right: 28%;
+    padding-top: 4%;
+}
+
+.btn-contact {
+    width: 100%;
+    height: 48px;
+    border: 1px solid #aec1e3;
+    border-radius: 13px;
+    color: #aec1e3;
+    font-weight: bold;
+    font-size: 20px;
+    background-color:#5d687b6e;
+}
+
+.contact-div {
+    line-height: 10px;
+    padding-top: 1.5%;
+}
+
+.btn-whatsapp {
+    height: 60px;
+    border-radius: 13px;
+}
+
+.txt-whatsapp {
+    color: #4cae4c;
+    font-size: 14px; 
+}
+
+.menu-down-view-1 {
+    text-align: center;
+    padding-top: 5%;
+}
+
+.text1-view-1 {
+    color: white;
+    font-size: 35px;
+}
+
+.text2-view-1 {
+    color: white;
+    font-size: 28px;
+}
+
+.text3-view-1 {
+    color:#861167;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.text4-view-1 {
+    color: #aec1e3;
+    font-size: 24px;
+    line-height : 25px;
+}
+
+.block-view-1 {
+    padding-top: 14%;
+}
+
+/* view 2 */
 .view2 {
     background: #ffffff;
     background-repeat: no-repeat;
@@ -24,6 +95,62 @@
     background-position: center center;
 }
 
+.block-view-2 {
+    padding-top: 14%;
+}
+
+.menu-down-view-2 {
+    text-align: center;
+    padding-top: 5%;
+}
+
+.text1-view-2{
+    color: rgb(65, 75, 93);
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.text2-view-2 {
+    padding-top: 1%;
+    font-size: 17px;
+    color: #939393;
+    text-align: center;
+}
+
+.text3-view-2 {
+    padding-top: 1%;
+    font-size: 17px;
+    color: #939393;
+    text-align: center;
+}
+
+.information-block {
+    padding-left: 12%;
+    padding-right: 12%;
+}
+
+.curriculum {
+    padding-top: 1.5%;
+}
+
+.btn-curriculum {
+    background-color: #861167;
+    color: #ffffff;
+    font-size: 18px;
+    width: 15%;
+    border-radius: 13px;
+}
+
+.information {
+    border: 1.5px solid #c8c8c8;
+    border-radius: 25px;
+    height: 220px;
+    width: 75%;
+    padding: 2%;
+}
+
+/* view 3 */
 .view3 {
     background: #26bece;
     background: -webkit-linear-gradient(#26bece, #1c93a0);
@@ -32,6 +159,7 @@
     background: linear-gradient(#26bece, #1c93a0);
 }
 
+/* view 4 */
 .view4 {
     background: #26bece;
     background: -webkit-linear-gradient(#26bece, #1c93a0);
@@ -39,6 +167,8 @@
     background: -moz-linear-gradient(#26bece, #1c93a0);
     background: linear-gradient(#26bece, #1c93a0);
 }
+
+
 /* Styles specific for this example */
 
 a {
@@ -49,7 +179,7 @@ a {
 
 .menu {
     position: fixed;
-    margin-top: 10px;
+    margin-top: 6px;
     left: 10px;
     width: 100%;
     font-family: Arial;
@@ -61,7 +191,14 @@ a {
 }
 
 .option {
-    padding-top: 1%
+    padding-top: 2%
+}
+
+.option:hover {
+    -webkit-filter: opacity(.5);
+    -moz-filter: opacity(.5);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: opacity(.5);
 }
 
 .menu-up {
@@ -178,82 +315,36 @@ input[type="button"] {
     color: #aec1e3;
 }
 
+.description:hover {
+    border-bottom: 2px solid #aec1e3;
+}
+
 .title {
     font-size: 15px;
     color: #aec1e3;
 }
 
-.text1-view-1 {
-    color: white;
-    font-size: 35px;
-}
-
-.text2-view-1 {
-    color: white;
-    font-size: 28px;
-}
-
-.text3-view-1 {
+.description-1 {
+    font-size: 12px;
     color:#861167;
-    font-size: 28px;
-    font-weight: bold;
 }
 
-.text4-view-1 {
-    color: #aec1e3;
-    font-size: 24px;
-    line-height : 25px;
+.description-1:hover {
+    border-bottom: 2px solid #861167;
 }
+
+
+.title-1 {
+    font-size: 15px;
+    color:#861167;
+}
+
 
 label {
     font-weight: 100;
 }
 
-.contact {
-    width: 100%;
-    padding-left: 28%;
-    padding-right: 28%;
-    padding-top: 6%;
-}
-
-.contact1 {
-    width: 100%;
-    padding-left: 31%;
-    padding-right: 28%;
-    padding-top: 4%;
-}
-
-.btn-contact {
-    width: 100%;
-    height: 60px;
-    border: 1px solid #aec1e3;
-    border-radius: 13px;
-    color: #aec1e3;
-    font-weight: bold;
-    font-size: 20px;
-    background-color: #5d687b8f;
-}
-
-.contact-div {
-    line-height: 10px;
-    padding-top: 1.5%;
-}
-
-.btn-whatsapp {
-    height: 60px;
-    border-radius: 13px;
-}
-
-.txt-whatsapp {
-    color: #4cae4c;
-    font-size: 14px; 
-}
-
-.menu-down-view-1 {
-    text-align: center;
-    padding-top: 5%;
-}
-
+/* media queries*/
 @media screen and (max-width : 2560px){
     .contact-div {
         padding-left: 4%;
@@ -261,14 +352,19 @@ label {
 }
 
 @media screen and (max-width : 1660px){
-    .contact-div {
-        padding-left: 5%;
+    
+    .menu-down-view-1 {
+        padding-top: 3%;
+    }
+
+    .menu-down-view-2 {
+        padding-top: 1%;
     }
 }
 
 @media screen and (max-width : 1510px){
     .contact-div {
-        padding-left: 4%;
+        padding-left: 1%;
     }
 
     .contact-div-1 {
@@ -276,10 +372,7 @@ label {
     }
 }
 
-@media screen and (max-width : 1410px){
-    .contact-div {
-        padding-left: 2%;
-    }
+@media screen and (max-width : 1420px){
 
     .contact-div-1 {
         padding-right: 12%;
