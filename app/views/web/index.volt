@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Portafolio Web</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../css/viewScroller.css">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
@@ -59,25 +60,25 @@
                 <a href="#view-2" class="vs-anchor">
                     <div class="col-md-2 main-block option">
                         <label class='title'>1. Sobre mi</label>
-                        <label class='description'>Mira aqui una breve descripción sobre mi.</label>
+                        <label class='description resalt'>Mira aqui una breve descripción sobre mi.</label>
                     </div>
                 </a>
                 <a href="#view-3" class="vs-anchor">
                     <div class="col-md-3 main-block option">
                         <label class='title'>2. Estudios y experiencia</label>
-                        <label class='description'>Conoce mi trayectoria academica y experiencia laboral.</label>
+                        <label class='description resalt'>Conoce mi trayectoria academica y experiencia laboral.</label>
                     </div>
                 </a>
                 <a href="#view-4" class="vs-anchor">
                     <div class="col-md-2 main-block option">
                         <label class='title'>3. Portafolio</label>
-                        <label class='description'>¡Basta de palabras! mira mis trabajos aqui.</label>
+                        <label class='description resalt'>¡Basta de palabras! mira mis trabajos aqui.</label>
                     </div>
                 </a>
-                <a href="#view-5" class="vs-anchor">
+                <a href="#view-8" class="vs-anchor">
                     <div class="col-md-2 main-block option">
                         <label class='title'>4. Contacto</label>
-                        <label class='description'>Estoy listo para comenzar cuando decidas.</label>
+                        <label class='description resalt'>Estoy listo para comenzar cuando decidas.</label>
                     </div>
                 </a>
             </div>
@@ -92,19 +93,19 @@
                 <center>
                     <div class="row contact">
                         <div class="col-md-3">
-                            <img style="width:30px;height:30px;" src="../images/Icono03.png" alt="LOGO"><br>
+                            <img style="width:30px; height:30px;" src="../images/Icono03.png" alt="LOGO"><br>
                             <label class='description'>(+57)318 392 2306</label>
                         </div>
                         <div class="col-md-3">
-                            <img style="width:30px;height:30px;" src="../images/Icono04.png" alt="LOGO"><br>
+                            <img style="width:30px; height:30px;" src="../images/Icono04.png" alt="LOGO"><br>
                             <label class='description'>idmr13@gmail.com</label>
                         </div>
                         <div class="col-md-3">
-                            <img style="width:30px;height:30px;" src="../images/Icono05.png" alt="LOGO"><br>
+                            <img style="width:30px; height:30px;" src="../images/Icono05.png" alt="LOGO"><br>
                             <label class='description'>/iDeaDavid</label>
                         </div>
                         <div class="col-md-3">
-                            <img style="width:30px;height:30px;" src="../images/Icono06.png" alt="LOGO"><br>
+                            <img style="width:30px; height:30px;" src="../images/Icono06.png" alt="LOGO"><br>
                             <label class='description'>/david_mr18</label>
                         </div>
                     </div>
@@ -143,25 +144,25 @@
                 <a href="#view-2" class="vs-anchor">
                     <div class="col-md-2 main-block option">
                         <label class='title-1'>1. Sobre mi</label>
-                        <label class='description-1'>Mira aqui una breve descripción sobre mi.</label>
+                        <label class='description-1 resalt-1' style='border-bottom: 1px solid #90024C; padding-bottom: 3%;'>Mira aqui una breve descripción sobre mi.</label>
                     </div>
                 </a>
                 <a href="#view-3" class="vs-anchor">
                     <div class="col-md-3 main-block option">
-                        <label class='title-1'>2. Estudios y experiencia</label>
-                        <label class='description-1'>Conoce mi trayectoria academica y experiencia laboral.</label>
+                        <label class='title-3'>2. Estudios y experiencia</label>
+                        <label class='description-3 resalt-3'>Conoce mi trayectoria academica y experiencia laboral.</label>
                     </div>
                 </a>
                 <a href="#view-4" class="vs-anchor">
                     <div class="col-md-2 main-block option">
-                        <label class='title-1'>3. Portafolio</label>
-                        <label class='description-1'>¡Basta de palabras! mira mis trabajos aqui.</label>
+                        <label class='title-3'>3. Portafolio</label>
+                        <label class='description-3 resalt-3'>¡Basta de palabras! mira mis trabajos aqui.</label>
                     </div>
                 </a>
-                <a href="#view-5" class="vs-anchor">
+                <a href="#view-8" class="vs-anchor">
                     <div class="col-md-2 main-block option">
-                        <label class='title-1'>4. Contacto</label>
-                        <label class='description-1'>Estoy listo para comenzar cuando decidas.</label>
+                        <label class='title-3'>4. Contacto</label>
+                        <label class='description-3 resalt-3'>Estoy listo para comenzar cuando decidas.</label>
                     </div>
                 </a>
             </div>
@@ -176,9 +177,31 @@
                 <div class='curriculum'>
                     <center><button type="button" class='btn btn-curriculum'>Ver mi HV</button></center>
                 </div>
-                <div class='row' style='padding-top:3%'>
+                <div class='row' style='padding-top:4%'>
                     <center>
                         <div class='information'>
+                            <a href="#" class="">
+                                <div class="button-description">
+                                    <div class='col-md-1'>
+                                        <img style="width:55px; height:55px;" src="../images/Icono08.png"> 
+                                    </div>
+                                    <div class='col-md-1 personal-description'>
+                                        <label class='txt-personal-description-1'>Descripción</label><br>
+                                        <label class='txt-personal-description-1'>personal</label>
+                                    </div>
+                                </div>
+
+                                <div class="button-description-1">
+                                    <div class='col-md-1'>
+                                        <img style="width:55px; height:55px;" src="../images/Icono09.png"> 
+                                    </div>
+                                    <div class='col-md-1 personal-description'>
+                                        <label class='txt-personal-description'>Perfil</label><br>
+                                        <label class='txt-personal-description'>profesional</label>
+                                    </div>
+                                </div>
+                            </a>
+                            
                             <label class='text3-view-2'>
                                 Soy un rockero de corazón, fanático de la música en general, amante del diseño en todas sus vertientes pero en especial en aquellas en las que he
                                 trabajado. Curioso por naturaleza, soy una persona que disfruta investigar y descubrir nuevos conocimientos y experiencias de todo tipo, científico
@@ -200,12 +223,309 @@
 
          <!-- View 3 -->
         <div vs-anchor="view-3" class="mainview view3">
-            <img src="../images/simple.png" class="inscription">
+            <div class="row menu">
+                <a href="#view-1" class="vs-anchor">
+                    <div class="col-md-2 main-block">
+                        <img style="width: 110px; height: 110px;" src="../images/Icono02.png" alt="LOGO">
+                    </div>
+                </a>
+                <a href="#view-2" class="vs-anchor">
+                    <div class="col-md-2 main-block option">
+                        <label class='title-3'>1. Sobre mi</label>
+                        <label class='description-3 resalt-3'>Mira aqui una breve descripción sobre mi.</label>
+                    </div>
+                </a>
+                <a href="#view-3" class="vs-anchor">
+                    <div class="col-md-3 main-block option">
+                        <label class='title-1'>2. Estudios y experiencia</label>
+                        <label class='description-1 resalt-1' style='border-bottom: 1px solid #90024C; padding-bottom: 3%;'>Conoce mi trayectoria academica y experiencia laboral.</label>
+                    </div>
+                </a>
+                <a href="#view-4" class="vs-anchor">
+                    <div class="col-md-2 main-block option">
+                        <label class='title-3'>3. Portafolio</label>
+                        <label class='description-3 resalt-3'>¡Basta de palabras! mira mis trabajos aqui.</label>
+                    </div>
+                </a>
+                <a href="#view-8" class="vs-anchor">
+                    <div class="col-md-2 main-block option">
+                        <label class='title-3'>4. Contacto</label>
+                        <label class='description-3 resalt-3'>Estoy listo para comenzar cuando decidas.</label>
+                    </div>
+                </a>
+            </div>
+            <section class='block-view-2'>
+                <center>
+                    <label class='text1-view-2'>Estudios y experiencia</label>
+                </center>
+                <div class="row timeline">
+                    <div class="container2 cafe col-md-1">
+                        <hr class="hr1">
+                    </div>
+                    <div class="container1 cafe col-md-1">
+                        <hr class="hr1">
+                    </div>
+                    <div class="container1 azul col-md-1">
+                        <hr class="hr1">
+                    </div>
+                    <div class="container2 azul col-md-1">
+                        <hr class="hr1">
+                    </div>
+                    <div class="container2 azul col-md-1">
+                        <hr class="hr1">
+                    </div>
+                    <div class="container2 azul col-md-1">
+                        <hr class="hr1">
+                    </div>
+                    <div class="container1 azul col-md-1">
+                        <hr class="hr1">
+                    </div>
+                    <div class="container1 naranja col-md-1">
+                        <hr class="hr1">
+                    </div>
+                    <div class="container1 azul col-md-1">
+                        <hr class="hr1">
+                    </div>
+                    <div class="container1 verde col-md-1">
+                        <hr class="hr1">
+                    </div>
+                    <div class="container2 verde col-md-1">
+                        <hr class="hr1">
+                    </div>
+                    <div class="container1 gris col-md-1">
+                        <hr class="hr1">
+                    </div>
+                    <div class="container1 morado col-md-1">
+                        <hr class="hr1">
+                    </div>
+                </div>
+                <div class="row timeline-years">
+                    <div class="container4 col-md-1">
+                        <label class='txt-year'>2010</label>
+                    </div>
+                    <div class="container3 col-md-1">
+                        <label class='txt-year'>2011</label>
+                    </div>
+                    <div class="container3 col-md-1">
+                    
+                    </div>
+                    <div class="container4 col-md-1">
+                        <label class='txt-year'>2012</label>
+                    </div>
+                    <div class="container4 col-md-1">
+                        <label class='txt-year'>2013</label>
+                    </div>
+                    <div class="container4 col-md-1">
+                        <label class='txt-year'>2014</label>
+                    </div>
+                    <div class="container3 col-md-1">
+                        <label class='txt-year'>2015</label>
+                    </div>
+                    <div class="container3 col-md-1">
+                        
+                    </div>
+                    <div class="container3 col-md-1">
+                        <label class='txt-year'>2016</label>
+                    </div>
+                    <div class="container3 col-md-1">
+                        
+                    </div>
+                    <div class="container4 col-md-1">
+                        <label class='txt-year'>2017</label>
+                    </div>
+                    <div class="container3 col-md-1">
+                        <label class='txt-year'>2018</label>
+                    </div>
+                    <div class="container3 col-md-1" style='padding-left: 80px;'>
+                        <label class='txt-year'>2019</label>
+                    </div>
+                    
+                </div>
+            <section>
+            <div class="menu-down-view-3">
+                <a class="vs-mainview-next"><img src="../images/Icono10.png" class="down"></a><br>
+            </div>
+            <br>
         </div>
 
-         <!-- View 4 -->
+        <!-- View 4 -->
         <div vs-anchor="view-4" class="mainview view4">
-            <img src="" class="inscription">
+            <div class="row menu">
+                <a href="#view-1" class="vs-anchor">
+                    <div class="col-md-2 main-block">
+                        <img style="width: 110px; height: 110px;" src="../images/Icono01.png" alt="LOGO">
+                    </div>
+                </a>
+                <a href="#view-2" class="vs-anchor">
+                    <div class="col-md-2 main-block option">
+                        <label class='title'>1. Sobre mi</label>
+                        <label class='description'>Mira aqui una breve descripción sobre mi.</label>
+                    </div>
+                </a>
+                <a href="#view-3" class="vs-anchor">
+                    <div class="col-md-3 main-block option">
+                        <label class='title'>2. Estudios y experiencia</label>
+                        <label class='description'>Conoce mi trayectoria academica y experiencia laboral.</label>
+                    </div>
+                </a>
+                <a href="#view-4" class="vs-anchor">
+                    <div class="col-md-2 main-block option">
+                        <label class='title-2'>3. Portafolio</label>
+                        <label class='description-2' style='border-bottom: 1px solid #FFFFFF; padding-bottom: 3%;'>¡Basta de palabras! mira mis trabajos aqui.</label>
+                    </div>
+                </a>
+                <a href="#view-8" class="vs-anchor">
+                    <div class="col-md-2 main-block option">
+                        <label class='title'>4. Contacto</label>
+                        <label class='description'>Estoy listo para comenzar cuando decidas.</label>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- View 5 -->
+        <div vs-anchor="view-5" class="mainview view5">
+            <div class="row menu">
+                <a href="#view-1" class="vs-anchor">
+                    <div class="col-md-2 main-block">
+                        <img style="width: 110px; height: 110px;" src="../images/Icono02.png" alt="LOGO">
+                    </div>
+                </a>
+                <a href="#view-2" class="vs-anchor">
+                    <div class="col-md-2 main-block option">
+                        <label class='title-3'>1. Sobre mi</label>
+                        <label class='description-3 resalt-3'>Mira aqui una breve descripción sobre mi.</label>
+                    </div>
+                </a>
+                <a href="#view-3" class="vs-anchor">
+                    <div class="col-md-3 main-block option">
+                        <label class='title-3'>2. Estudios y experiencia</label>
+                        <label class='description-3 resalt-3'>Conoce mi trayectoria academica y experiencia laboral.</label>
+                    </div>
+                </a>
+                <a href="#view-4" class="vs-anchor">
+                    <div class="col-md-2 main-block option">
+                        <label class='title-1'>3. Portafolio</label>
+                        <label class='description-1 resalt-1' style='border-bottom: 1px solid #90024C; padding-bottom: 3%;'>¡Basta de palabras! mira mis trabajos aqui.</label>
+                    </div>
+                </a>
+                <a href="#view-8" class="vs-anchor">
+                    <div class="col-md-2 main-block option">
+                        <label class='title-3'>4. Contacto</label>
+                        <label class='description-3 resalt-3'>Estoy listo para comenzar cuando decidas.</label>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- View 6 -->
+        <div vs-anchor="view-6" class="mainview view6">
+            <div class="row menu">
+                <a href="#view-1" class="vs-anchor">
+                    <div class="col-md-2 main-block">
+                        <img style="width: 110px; height: 110px;" src="../images/Icono02.png" alt="LOGO">
+                    </div>
+                </a>
+                <a href="#view-2" class="vs-anchor">
+                    <div class="col-md-2 main-block option">
+                        <label class='title-3'>1. Sobre mi</label>
+                        <label class='description-3 resalt-3'>Mira aqui una breve descripción sobre mi.</label>
+                    </div>
+                </a>
+                <a href="#view-3" class="vs-anchor">
+                    <div class="col-md-3 main-block option">
+                        <label class='title-3'>2. Estudios y experiencia</label>
+                        <label class='description-3 resalt-3'>Conoce mi trayectoria academica y experiencia laboral.</label>
+                    </div>
+                </a>
+                <a href="#view-4" class="vs-anchor">
+                    <div class="col-md-2 main-block option">
+                        <label class='title-1'>3. Portafolio</label>
+                        <label class='description-1 resalt-1' style='border-bottom: 1px solid #90024C; padding-bottom: 3%;'>¡Basta de palabras! mira mis trabajos aqui.</label>
+                    </div>
+                </a>
+                <a href="#view-8" class="vs-anchor">
+                    <div class="col-md-2 main-block option">
+                        <label class='title-3'>4. Contacto</label>
+                        <label class='description-3 resalt-3'>Estoy listo para comenzar cuando decidas.</label>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- View 7 -->
+        <div vs-anchor="view-7" class="mainview view7">
+            <div class="row menu">
+                <a href="#view-1" class="vs-anchor">
+                    <div class="col-md-2 main-block">
+                        <img style="width: 110px; height: 110px;" src="../images/Icono01.png" alt="LOGO">
+                    </div>
+                </a>
+                <a href="#view-2" class="vs-anchor">
+                    <div class="col-md-2 main-block option">
+                        <label class='title'>1. Sobre mi</label>
+                        <label class='description'>Mira aqui una breve descripción sobre mi.</label>
+                    </div>
+                </a>
+                <a href="#view-3" class="vs-anchor">
+                    <div class="col-md-3 main-block option">
+                        <label class='title'>2. Estudios y experiencia</label>
+                        <label class='description'>Conoce mi trayectoria academica y experiencia laboral.</label>
+                    </div>
+                </a>
+                <a href="#view-4" class="vs-anchor">
+                    <div class="col-md-2 main-block option">
+                        <label class='title-2'>3. Portafolio</label>
+                        <label class='description-2' style='border-bottom: 1px solid #FFFFFF; padding-bottom: 3%;'>¡Basta de palabras! mira mis trabajos aqui.</label>
+                    </div>
+                </a>
+                <a href="#view-8" class="vs-anchor">
+                    <div class="col-md-2 main-block option">
+                        <label class='title'>4. Contacto</label>
+                        <label class='description'>Estoy listo para comenzar cuando decidas.</label>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- view 8 -->
+        <div vs-anchor="view-8" class="mainview view8">
+            <div class="row menu">
+                <a href="#view-1" class="vs-anchor">
+                    <div class="col-md-2 main-block">
+                        <img style="width: 110px; height: 110px;" src="../images/Icono02.png" alt="LOGO">
+                    </div>
+                </a>
+                <a href="#view-2" class="vs-anchor">
+                    <div class="col-md-2 main-block option">
+                        <label class='title-3'>1. Sobre mi</label>
+                        <label class='description-3 resalt-3'>Mira aqui una breve descripción sobre mi.</label>
+                    </div>
+                </a>
+                <a href="#view-3" class="vs-anchor">
+                    <div class="col-md-3 main-block option">
+                        <label class='title-3'>2. Estudios y experiencia</label>
+                        <label class='description-3 resalt-3'>Conoce mi trayectoria academica y experiencia laboral.</label>
+                    </div>
+                </a>
+                <a href="#view-4" class="vs-anchor">
+                    <div class="col-md-2 main-block option">
+                        <label class='title-3'>3. Portafolio</label>
+                        <label class='description-3 resalt-3'>¡Basta de palabras! mira mis trabajos aqui.</label>
+                    </div>
+                </a>
+                <a href="#view-8" class="vs-anchor">
+                    <div class="col-md-2 main-block option">
+                        <label class='title-1'>4. Contacto</label>
+                        <label class='description-1 resalt-1' style='border-bottom: 1px solid #90024C; padding-bottom: 3%;'>Estoy listo para comenzar cuando decidas.</label>
+                    </div>
+                </a>
+            </div>
+            <section class='block-view-2'>
+            
+                
+            <section>
+            <br>
         </div>
     </div>
 </body>
@@ -227,7 +547,7 @@
             animEffectMainViewCss3: 'cubic-bezier(0.42, 0, 0.58, 1)',
             useScrollbar: false,
             changeWhenAnim: false,
-            viewsHeight: [height, height, height, height]
+            viewsHeight: [height, height, height, 600, 600, 600, 600, height]
         });
     });
 </script>
