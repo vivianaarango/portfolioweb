@@ -198,6 +198,123 @@
     padding-top: 5%;
 }
 
+/* timeline*/
+.container1 {
+	width: 5.55%;
+	height: 16px;
+	border-top: 1px solid gray;  border-right: 0.5px solid gray;  border-bottom: 1px solid gray;  
+	display: flex;
+    align-items: center;
+}
+
+.container2 {
+	width: 11.1%;
+	height: 16px;
+	border-top: 1px solid gray;  border-right: 0.5px solid gray;  border-bottom: 1px solid gray;  
+	display: flex;
+    align-items: center;
+}
+
+.container3 {
+	width: 5.55%;
+	height: 16px;
+	display: flex;
+    align-items: center;
+}
+
+.container4 {
+	width: 10.1%;
+	height: 16px;
+	display: flex;
+    align-items: center;
+}
+
+
+.hr1 {
+    width: 100%;
+    border-top: 1px solid #827e7e;
+}
+
+.cafe {
+	background-color: #c3b782;
+}
+
+.azul {
+	background-color: #2ea2ac;
+}
+
+.naranja {
+	background-color: #db8333;
+}
+
+.verde {
+	background-color: #7ec260;
+}
+
+.gris {
+	background-color: #7a95a7;
+}
+
+.morado {
+	background-color: #791355;
+}
+
+.timeline {
+    padding-left: 13%;
+    padding-right: 13%;
+    padding-top: 4%;
+}
+
+.timeline-years {
+    padding-left: 11%;
+    padding-right: 11%;
+    padding-top: 0.5%;
+}
+
+.txt-year {
+    font-size: 20px;
+    color: #73A1AC;
+    font-weight: bold;
+}
+
+.circulo1 {
+    border-radius: 50px;
+    height: 25px;
+    width: 25px;
+}
+
+.circulo2 {
+    border-radius: 50px;
+    height: 25px;
+    width: 25px;
+    margin-top: 380%;
+}
+
+.timeline-2 {
+    padding-left: 13%;
+    padding-right: 10%;
+    padding-top: 6%;
+}
+
+.txt-place {
+    font-size: 14px;
+    color: #acb1b1;
+}
+
+.txt-experience {
+    color: #4B6870;
+}
+
+.container6 {
+    padding-top: 10%;
+}
+
+.line {
+    border-right: 1px solid #4B6870;
+    height: 200px;
+}
+
+
 /* view 4 */
 .view4 {
     background-image: url(../images/Fondo02.jpg);
@@ -206,6 +323,50 @@
     background-position: center center;
 }
 
+.block-view-4 {
+    padding-top: 17%;
+    padding-left: 8%;
+}
+
+.text1-view-4 {
+    color: white;
+    font-size: 28px;
+}
+
+.text2-view-4 {
+    color: #7a95a7;
+    font-size: 56px;
+    line-height: 30px;
+    font-weight: 1000;
+}
+
+.text3-view-4 {
+    color: #ffffffde;
+    font-size: 15px;
+    line-height: 0px;
+}
+
+.block-view-more {
+    padding-top: 5%;
+}
+
+.btn-view-more {
+    width: 13%;
+    height: 35px;
+    border-radius: 13px;
+    font-size: 15px;
+    background-color: #5d687b00;
+}
+
+.border-blue {
+    color: #FFFFFF;
+    border: 1px solid #73A1AC;
+}
+
+.border-purple {
+    color: #791355;
+    border: 1px solid #791355;
+}
 
 /* view 5 */
 .view5 {
@@ -215,6 +376,30 @@
     background-position: center center;
 }
 
+.block-view-5 {
+    padding-top: 17%;
+    text-align: right;
+    padding-right: 8%;
+}
+
+
+.text1-view-5 {
+    color: #827e7e;
+    font-size: 34px;
+}
+
+.text2-view-5 {
+    color: #791355;
+    font-size: 50px;
+    line-height: 30px;
+    font-weight: 1000;
+}
+
+.text3-view-5 {
+    color: #827e7e;
+    font-size: 15px;
+    line-height: 0px;
+}
 
 /* view 6 */
 .view6 {
@@ -222,6 +407,34 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+}
+
+.block-view-6 {
+    padding-top: 15%;
+    padding-left: 8%;
+}
+
+
+.text1-view-6 {
+    color: #827e7e;
+    font-size: 34px;
+}
+
+.text2-view-6 {
+    color: #791355;
+    font-size: 50px;
+    line-height: 30px;
+    font-weight: 1000;
+}
+
+.text3-view-6 {
+    color: #827e7e;
+    font-size: 15px;
+    line-height: 0px;
+}
+
+.block-view-more-6 {
+    padding-top: 4%;
 }
 
 /* view 7 */
@@ -232,7 +445,35 @@
     background-position: center center;
 }
 
-/* view 3 */
+.block-view-7 {
+    padding-top: 17%;
+    text-align: right;
+    padding-right: 8%;
+}
+
+.text1-view-7 {
+    color: white;
+    font-size: 28px;
+}
+
+.text2-view-7 {
+    color: #7a95a7;
+    font-size: 56px;
+    line-height: 30px;
+    font-weight: 1000;
+}
+
+.text3-view-7 {
+    color: #ffffffde;
+    font-size: 15px;
+    line-height: 0px;
+}
+
+.block-view-more-7 {
+    padding-top: 2%;
+}
+
+/* view 8 */
 .view8 {
     background: #ededef;
     background-repeat: no-repeat;
@@ -240,6 +481,42 @@
     background-attachment: fixed;
     background-position: center center;
 }
+
+.block-contact {
+    width: 85%;
+    padding-left: 14%;
+    padding-top: 2%;
+}
+
+.sub-block-contact {
+    width: 50%;
+}
+
+.field {
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    border: 1px solid #827e7e;
+    padding: 0 4px 0 25px;
+    width: 98%;
+    height: 40px;
+}
+
+.block-contact-1 {
+    width: 85%;
+    padding-left: 15%;
+    padding-top: 2%;
+}
+
+.text-area-contact {
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    border: 1px solid #827e7e;
+    padding: 5px 4px 0 25px;
+    width: 97.5%;
+}
+
 
 
 /* Styles specific for this example */
@@ -460,7 +737,7 @@ label {
     }
 
     .menu-down-view-3 {
-        padding-top: 2%;
+        padding-top: 22%;
     }
 }
 
@@ -479,81 +756,4 @@ label {
     .contact-div-1 {
         padding-right: 12%;
     }
-}
-
-/* timeline*/
-.container1 {
-	width: 5.55%;
-	height: 20px;
-	border-top: 1px solid gray;  border-right: 0.5px solid gray;  border-bottom: 1px solid gray;  
-	display: flex;
-    align-items: center;
-}
-
-.container2 {
-	width: 11.1%;
-	height: 20px;
-	border-top: 1px solid gray;  border-right: 0.5px solid gray;  border-bottom: 1px solid gray;  
-	display: flex;
-    align-items: center;
-}
-
-.container3 {
-	width: 5.55%;
-	height: 20px;
-	display: flex;
-    align-items: center;
-}
-
-.container4 {
-	width: 10.1%;
-	height: 20px;
-	display: flex;
-    align-items: center;
-}
-
-.hr1 {
-    width: 100%;
-}
-
-.cafe {
-	background-color: #c3b782;
-}
-
-.azul {
-	background-color: #2ea2ac;
-}
-
-.naranja {
-	background-color: #db8333;
-}
-
-.verde {
-	background-color: #7ec260;
-}
-
-.gris {
-	background-color: #7a95a7;
-}
-
-.morado {
-	background-color: #791355;
-}
-
-.timeline {
-    padding-left: 13%;
-    padding-right: 13%;
-    padding-top: 4%;
-}
-
-.timeline-years {
-    padding-left: 11%;
-    padding-right: 11%;
-    padding-top: 0.5%;
-}
-
-.txt-year {
-    font-size: 20px;
-    color: #73A1AC;
-    font-weight: bold;
 }

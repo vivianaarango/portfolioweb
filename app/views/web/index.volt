@@ -339,7 +339,60 @@
                     <div class="container3 col-md-1" style='padding-left: 80px;'>
                         <label class='txt-year'>2019</label>
                     </div>
-                    
+                </div>
+                <div class="row timeline-2 col-md-12">
+                    <div class='col-md-1' style='width:4.66%'>
+                        <div class='circulo1 cafe'></div>
+                        <div class='circulo2 azul'></div>
+                    </div>
+                    <div class='col-md-1 line' style='width:30.66%'>
+                        <div class='container5'>
+                            <label class='txt-experience'>Técnico en diseño gráfico y publicidad</label><br>
+                            <img style="width:30px; height:30px;" src="../images/Icono11.png">
+                            <label class='txt-place'>Instituto de estudios comerciales INESCO</label><br>
+                            <img style="width:30px; height:30px;" src="../images/Icono12.png">
+                            <label class='txt-place'>Diseñador gráfico técnico</label><br>
+                        </div>
+                        <div class='container6'>
+                            <label class='txt-experience'>Diseñador gráfico profesional</label><br>
+                            <img style="width:30px; height:30px;" src="../images/Icono11.png">
+                            <label class='txt-place'>Corporación Escuela de Artes y Letras</label><br>
+                            <img style="width:30px; height:30px;" src="../images/Icono12.png">
+                            <label class='txt-place'>Diseñador gráfico profesiona</label><br>
+                        </div>
+                    </div>
+                    <div class='col-md-1' style='width:4.66%'>
+                        <div class='circulo1 naranja'></div>
+                        <div class='circulo2 verde'></div>
+                    </div>
+                    <div class='col-md-1 line' style='width:29.66%'>
+                        <div class='container5'>
+                            <label class='txt-experience'>Prácticas laborales</label><br>
+                            <img style="width:30px; height:30px;" src="../images/Icono11.png">
+                            <label class='txt-place'>Teatro Mayor Julio Mario Santo Domingo</label><br>
+                        </div>
+                        <div class='container6' style='padding-top: 18%;'>
+                            <label class='txt-experience'>Creativo gráfico</label><br>
+                            <img style="width:30px; height:30px;" src="../images/Icono11.png">
+                            <label class='txt-place'>On Marketing Ideas SAS</label><br>
+                        </div>
+                    </div>
+                    <div class='col-md-1' style='width:4.66%'>
+                        <div class='circulo1 gris'></div>
+                        <div class='circulo2 morado'></div>
+                    </div>
+                    <div class='col-md-1' style='width:24.66%'>
+                        <div class='container5'>
+                            <label class='txt-experience'>Freelance</label><br>
+                            <img style="width:30px; height:30px;" src="../images/Icono11.png">
+                            <label class='txt-place'>Diseñador gráfico Freelance</label><br>
+                        </div>
+                        <div class='container6' style='padding-top: 25%;'>
+                            <label class='txt-experience'>Diseñador UI UX</label><br>
+                            <img style="width:30px; height:30px;" src="../images/Icono11.png">
+                            <label class='txt-place'>Logisticapp SAS</label><br>
+                        </div>
+                    </div>
                 </div>
             <section>
             <div class="menu-down-view-3">
@@ -381,8 +434,19 @@
                     </div>
                 </a>
             </div>
+            <section class='block-view-4'>
+                <label class='text1-view-4'>Marca personal</label><br>
+                <label class='text2-view-4'>Idea Design</label><br><br>
+                <label class='text3-view-4'>Proyecto de creación de marca, desarrollo</label><br>
+                <label class='text3-view-4'>de identidad corporativa.</label>
+            </section>
+            <div class="row btn-down">
+                <div class='block-view-more'>
+                    <center><button type="button" class='btn btn-view-more border-blue'>Ver más</button></center>
+                </div>
+            </div>
         </div>
-
+ 
         <!-- View 5 -->
         <div vs-anchor="view-5" class="mainview view5">
             <div class="row menu">
@@ -415,6 +479,18 @@
                         <label class='description-3 resalt-3'>Estoy listo para comenzar cuando decidas.</label>
                     </div>
                 </a>
+            </div>
+            <section class='block-view-5'>
+                <label class='text1-view-5'>Nuevos diseños</label><br>
+                <label class='text2-view-5'>Tarjetas de crédito</label><br>
+                <label class='text1-view-5'>Banco Pichincha</label><br><br>
+                <label class='text3-view-5'>Desarrollo de comunicación publicitaria para lanzamiento</label><br>
+                <label class='text3-view-5'>de nuevas tarjetas de crédito Banco Pichincha Colombia.</label>
+            </section>
+            <div class="row btn-down">
+                <div class='block-view-more' style='padding-top: 2%;'>
+                    <center><button type="button" class='btn btn-view-more border-purple'>Ver más</button></center>
+                </div>
             </div>
         </div>
 
@@ -451,6 +527,19 @@
                     </div>
                 </a>
             </div>
+            <section class='block-view-6'>
+                <label class='text1-view-6'>Invitación</label><br>
+                <label class='text2-view-6'>Feria Colwagen Audi</label><br>
+                <label class='text1-view-6'>convenio Banco Pichincha</label><br><br>
+                <label class='text3-view-6'>Desarrollo de invitación clientes banco para convenio</label><br>
+                <label class='text3-view-6'>Colwagen Audi - Banco Pichincha feria del vehiculo</label><br>
+                <label class='text3-view-6'>Corferias 2017.</label>
+            </section>
+            <div class="row btn-down">
+                <div class='block-view-more-6'>
+                    <center><button type="button" class='btn btn-view-more border-purple'>Ver más</button></center>
+                </div>
+            </div>
         </div>
 
         <!-- View 7 -->
@@ -485,6 +574,19 @@
                         <label class='description'>Estoy listo para comenzar cuando decidas.</label>
                     </div>
                 </a>
+            </div>
+            <section class='block-view-7'>
+                <label class='text1-view-7'>Rediseño</label><br>
+                <label class='text2-view-7'>Imagen Producto</label><br>
+                <label class='text1-view-7'>Crédito de Vehículo</label><br><br>
+                <label class='text3-view-7'>Creación de nueva identidad producto “crédito de vehiculo”</label><br>
+                <label class='text3-view-7'>Banco Pichincha vigente hasta su renovación de marca en</label><br>
+                <label class='text3-view-7'>el año 2018.</label>
+            </section>
+            <div class="row btn-down">
+                <div class='block-view-more-7'>
+                    <center><button type="button" class='btn btn-view-more border-blue'>Ver más</button></center>
+                </div>
             </div>
         </div>
 
@@ -522,10 +624,27 @@
                 </a>
             </div>
             <section class='block-view-2'>
-            
-                
+                <center>
+                    <label class='text1-view-2'>Contacto</label>
+                </center>
+                <center>
+                    <label class='text2-view-2'>¿Estamos listos? ¡cuando quieras escríbeme y comencemos a trabajar!</label>
+                </center>
+                <div class='row block-contact'>
+                    <div class='col-md-1 sub-block-contact'>
+                        <input class='field' type="text" placeholder='Tu nombre'/>
+                    </div>
+                    <div class='col-md-1 sub-block-contact'>
+                        <input class='field' type="text" placeholder='Tu correo'/>
+                    </div>
+                </div>
+                <div class='row block-contact-1'>
+                    <textarea rows="6" placeholder='Tu mensaje' class='text-area-contact'></textarea>
+                </div>
+                <div class='curriculum'>
+                    <center><button type="button" class='btn btn-curriculum'>Enviar</button></center>
+                </div>
             <section>
-            <br>
         </div>
     </div>
 </body>
