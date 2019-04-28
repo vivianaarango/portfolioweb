@@ -10,7 +10,11 @@ class WebController extends ControllerBase
 
     public function indexAction()
     {
-        // $client = Cliente::findFirst(2);
-        // print_r($client->toArray());die;
+        $projects = Projects::find(array(
+            "order" => "id_project ASC"
+         ));
+
+        $this->view->projects = $projects;
+        $this->view->count_projects = count($projects);
     }
 }
