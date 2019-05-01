@@ -4,7 +4,9 @@ use Phalcon\Mvc\Controller;
 
 class ControllerBase extends Controller
 {
-
+    const URLMAIL = __DIR__ . '/../library/PHPMailer/PHPMailerAutoload.php';
+    const URLMAILCONFIG = __DIR__ . '/../library/PHPMailer/phpmailer_config.php';    
+    
     protected function initialize()
     {
         $this->tag->prependTitle('INVO | ');

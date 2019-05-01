@@ -58,7 +58,7 @@ class SecurityPlugin extends Plugin
 			//Public area resources
 			$publicResources = [
 				'index'      => ['index'],
-				'web'		 => ['index']	
+				'web'		 => ['index', 'sendemail', 'detail']	
 			];
 			
 			foreach ($publicResources as $resource => $actions) {

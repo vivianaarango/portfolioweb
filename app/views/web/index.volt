@@ -534,20 +534,22 @@
                 <center>
                     <label class='text2-view-2'>¿Estamos listos? ¡cuando quieras escríbeme y comencemos a trabajar!</label>
                 </center>
-                <div class='row block-contact'>
-                    <div class='col-md-1 sub-block-contact'>
-                        <input class='field' type="text" placeholder='Tu nombre'/>
+                {{ form("web/sendemail", "method":"post") }}
+                    <div class='row block-contact'>
+                        <div class='col-md-1 sub-block-contact'>
+                            <input name='name_user' class='field' type="text" placeholder='Tu nombre'/>
+                        </div>
+                        <div class='col-md-1 sub-block-contact'>
+                            <input name='email' class='field' type="text" placeholder='Tu correo'/>
+                        </div>
                     </div>
-                    <div class='col-md-1 sub-block-contact'>
-                        <input class='field' type="text" placeholder='Tu correo'/>
+                    <div class='row block-contact-1'>
+                        <textarea name='message' rows="6" placeholder='Tu mensaje' class='text-area-contact'></textarea>
                     </div>
-                </div>
-                <div class='row block-contact-1'>
-                    <textarea rows="6" placeholder='Tu mensaje' class='text-area-contact'></textarea>
-                </div>
-                <div class='curriculum'>
-                    <center><button type="button" class='btn btn-curriculum'>Enviar</button></center>
-                </div>
+                    <div class='curriculum'>
+                        <center><button type="submit" class='btn btn-curriculum'>Enviar</button></center>
+                    </div>
+                {{ end_form() }}
                 <div class='footer'>
                     <div class='row footer-contact'>
                         <center class="col-md-9 section-contact-1">

@@ -552,6 +552,57 @@
 }
 
 
+/* Detail views*/
+
+/* view 1 */
+.view-detail-1 {
+    background-image: url(../images/Fondo06.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.text1-detail-1 {
+    color: white;
+    font-size: 40px;
+    padding-left: 16%;
+}
+
+.text2-detail-1 {
+    color: #7a95a7;
+    font-size: 80px;
+    line-height: 50px;
+    font-weight: 1000;
+}
+
+.text3-detail-1 {
+    color: #ffffff96;
+    font-size: 15px;
+    margin-top: 5%;
+}
+
+.detail-btn {
+    width: 100%;
+    border-radius: 13px;
+    color: #73A1AC;
+    font-size: 17px;
+    background-color: #5d687b54;
+}
+
+.block-detail-btn {
+    width: 50%;
+}
+
+.block-detail-1 {
+    padding-top: 17%;
+    padding-left: 14%;
+    width: 45%;
+}
+
+.menu-down-detail-1 {
+    text-align: center;
+    padding-top: 4%;
+}
 /* Styles specific for this example */
 
 
@@ -791,6 +842,14 @@ label {
 
     .contact-div-1 {
         padding-right: 8%;
+    }
+    
+    .block-detail-1 {
+        width: 55%;
+    }
+
+    .block-detail-btn {
+        width: 45%;
     }
 }
 
