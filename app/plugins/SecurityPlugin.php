@@ -58,6 +58,7 @@ class SecurityPlugin extends Plugin
 			//Public area resources
 			$publicResources = [
 				'index'      => ['index'],
+				'admin'      => ['index', 'experience', 'project'],
 				'web'		 => ['index', 'sendemail', 'detail']	
 			];
 			
