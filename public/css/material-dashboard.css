@@ -8762,7 +8762,7 @@ a.text-dark:focus {
   position: relative;
   padding: 12px 30px;
   margin: 0.3125rem 1px;
-  font-size: .75rem;
+  font-size: 15px;
   font-weight: 400;
   line-height: 1.428571;
   text-decoration: none;
@@ -10894,7 +10894,7 @@ fieldset[disabled] .form-group.is-focused .form-check .form-check-label {
 }
 
 .form-check .form-check-input:checked+.form-check-sign .check {
-  background: #9c27b0;
+  background: #4CAF50;
 }
 
 .form-check .form-check-input:checked+.form-check-sign .check:before {
@@ -11358,7 +11358,7 @@ fieldset[disabled] .is-focused .switch label:focus {
 
 .form-control,
 .is-focused .form-control {
-  background-image: linear-gradient(to top, #9c27b0 2px, rgba(156, 39, 176, 0) 2px), linear-gradient(to top, #d2d2d2 1px, rgba(210, 210, 210, 0) 1px);
+  background-image: linear-gradient(to top, #73A1AC 2px, rgba(156, 39, 176, 0) 2px), linear-gradient(to top, #d2d2d2 1px, rgba(210, 210, 210, 0) 1px);
 }
 
 .form-control:invalid {
@@ -16158,6 +16158,7 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
 .table>thead>tr>td,
 .table>tbody>tr>td,
 .table>tfoot>tr>td {
+  font-family: 'Poppins', sans-serif;
   padding: 12px 8px;
   vertical-align: middle;
   border-color: #ddd;
@@ -16985,6 +16986,7 @@ label {
 }
 
 .card .card-header .card-title {
+  font-family: 'Poppins', sans-serif;
   margin-bottom: 3px;
   font-size: 20px;
 }
@@ -17129,11 +17131,17 @@ label {
 
 .card [class*="card-header-"] .card-icon,
 .card [class*="card-header-"] .card-text {
-  border-radius: 3px;
+  /*border-radius: 3px;
   background-color: #999999;
   padding: 15px;
   margin-top: -20px;
   margin-right: 15px;
+  float: left;*/
+  border-radius: 3px;
+  background-color: #999999;
+  padding: 10px;
+  margin-top: -14px;
+  margin-right: -43px;
   float: left;
 }
 
@@ -17314,6 +17322,7 @@ label {
 .card-stats .card-header .card-category:not([class*="text-"]) {
   color: #999999;
   font-size: 14px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .card-stats .card-header+.card-footer {
@@ -18822,6 +18831,25 @@ Copyright (c) 2015 Daniel Eden
   .sidebar .navbar-form {
     display: none !important;
   }
+}
+
+.div-red {
+  height: 10px;
+  width: 30px;
+  background-color: #90024C;
+  border-radius: 6px;
+}
+
+.div-blue {
+  height: 10px;
+  width: 30px;
+  background-color: #73A1AC;
+  border-radius: 6px;
+}
+
+.options {
+  border: none;
+  background-color: transparent;
 }
 
 /*# sourceMappingURL=dashboard-free.css.map */
