@@ -4997,9 +4997,9 @@ tbody.collapse.show {
 }
 
 .alert-success {
-  color: #285b2a;
-  background-color: #dbefdc;
-  border-color: #cde9ce;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #3c763d;
 }
 
 .alert-success hr {
@@ -13411,9 +13411,10 @@ fieldset[disabled] .form-group .form-control {
   color: #ffffff;
 }
 
-.alert.alert-success {
-  background-color: #55b559;
-  color: #ffffff;
+.alert-success {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #3c763d;
 }
 
 .alert.alert-success a,

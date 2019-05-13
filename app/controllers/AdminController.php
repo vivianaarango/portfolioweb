@@ -45,9 +45,9 @@ class AdminController extends ControllerBase
                     $project->text4 = $post['text4'];
 
                     if ( $project->save() ){ 
-                        $this->flash->success('dfbsdb');
+                        $this->flash->success('Hemos actualizado los datos de tu proyecto !');
                     } else {
-                        $this->flash->success(';o');
+                        $this->flash->success('No hemos podido actualizar los datos');
                     }
                 } 
                 $this->response->redirect('admin');

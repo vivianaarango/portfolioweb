@@ -37,6 +37,9 @@
         </div>
 
         <div class="main-panel">
+            <div class="col-md-10 col-md-offset-1 main">
+                {{ flash.output() }}
+            </div>
             <div class="content">
                 <div class="container-fluid">
                     <div class="row">
