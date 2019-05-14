@@ -97,7 +97,7 @@
                                                     {{ form('admin/view', 'role': 'form') }}
                                                         <input type='hidden' name='id' id='id' value={{ item.id_project }}>
                                                         <button class="nav-link options" type='submit'>
-                                                            <i  style='color: #009659;' class="material-icons">visibility</i>
+                                                            <i  style='color: #456168;' class="material-icons">visibility</i>
                                                         </button>
                                                     {{ end_form() }} 
                                                 </td>
@@ -105,7 +105,7 @@
                                                     {{ form('admin/edit', 'role': 'form') }}
                                                         <input type='hidden' name='id_project' id='id_project' value={{ item.id_project }}>
                                                         <button class="nav-link options" type='submit'>
-                                                            <i style='color: #FFC107;' class="material-icons">edit</i>
+                                                            <i style='color: #456168;' class="material-icons">edit</i>
                                                         </button>
                                                     {{ end_form() }} 
                                                 </td>
@@ -113,7 +113,7 @@
                                                     {{ form('admin/delete', 'role': 'form') }}
                                                         <input type='hidden' name='id_pjt' id='id_pjt' value={{ item.id_project }}>
                                                         <button class="nav-link options" type='submit'>
-                                                            <i style='color: #f44336;' class="material-icons">delete_sweep</i>
+                                                            <i style='color: #456168;' class="material-icons">delete_sweep</i>
                                                         </button>
                                                     {{ end_form() }} 
                                                 </td>

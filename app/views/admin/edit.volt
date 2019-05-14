@@ -164,7 +164,7 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                             <label class="bmd-label-floating">Imagen</label>
-                                            <input type="text" class="form-control">
+                                            <input type="file" name="image" id="image" class="form-control">
                                             </div>
                                         </div>
                                     </div>
@@ -173,9 +173,7 @@
                                 {{ end_form() }}
                                 </div>
                             </div>
-                            </div>
-                    
-                    
+                        </div>
                     </div>
                 </div>
             </div>

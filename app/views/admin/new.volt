@@ -47,7 +47,7 @@
                                     <p class="card-category">Completa tu proyecto</p>
                                 </div>
                                 <div class="card-body">
-                                {{ form("admin/new", "method":"post") }}
+                                {{ form("admin/new", "method":"post", 'enctype': 'multipart/form-data') }}
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-group">
@@ -144,10 +144,8 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <div class="form-group">
-                                            <label class="bmd-label-floating">Imagen</label>
-                                            <input type="text" name='image' class="form-control">
-                                            </div>
+                                            <label class="bmd-label-floating">Imagen de fondo</label>
+                                            <input type="file" id='image' name="image"><br><br>
                                         </div>
                                     </div>
                                     <button type="submit" class="btn btn-success pull-right">Crear Proyecto</button>
@@ -159,6 +157,12 @@
                     </div>
                 </div>
             </div>
+
+            <form action="/action_page.php">
+                Select a file: <label class="bmd-label-floating">Imagen</label>
+                <input type="file" name="image" id="image" class="form-control"><br><br>
+                <input type="submit">
+            </form>
 
             <footer class="footer">
                 <div class="container-fluid">
@@ -183,5 +187,11 @@
         </div>
     </div>
 
+ 
+
 </body>
 </html>
+
+<script src="../js/jquery-3.1.0.min.js"></script>
+<script src="../js/jquery.easing.min.js"></script>
+<script src="../js/jquery.mousewheel.min.js"></script>

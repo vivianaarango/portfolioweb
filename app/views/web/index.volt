@@ -609,7 +609,7 @@
         let height = window.innerHeight;
         // Sets viewScroller
         $('.mainbag').viewScroller({
-            animSpeedMainView: 2000,
+            animSpeedMainView: 600,
             animEffectMainViewCss3: 'cubic-bezier(0.42, 0, 0.58, 1)',
             useScrollbar: false,
             changeWhenAnim: false,
