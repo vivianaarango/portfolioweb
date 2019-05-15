@@ -162,10 +162,8 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <div class="form-group">
-                                            <label class="bmd-label-floating">Imagen</label>
-                                            <input type="file" name="image" id="image" class="form-control">
-                                            </div>
+                                            <label class="bmd-label-floating">Imagen de fondo</label>
+                                            <input type="file" id='image' name="image"><br><br>
                                         </div>
                                     </div>
                                     <button type="submit" class="btn btn-success pull-right">Editar Proyecto</button>

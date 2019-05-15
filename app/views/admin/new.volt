@@ -158,12 +158,6 @@
                 </div>
             </div>
 
-            <form action="/action_page.php">
-                Select a file: <label class="bmd-label-floating">Imagen</label>
-                <input type="file" name="image" id="image" class="form-control"><br><br>
-                <input type="submit">
-            </form>
-
             <footer class="footer">
                 <div class="container-fluid">
                 <nav class="float-left">
@@ -195,3 +189,4 @@
 <script src="../js/jquery-3.1.0.min.js"></script>
 <script src="../js/jquery.easing.min.js"></script>
 <script src="../js/jquery.mousewheel.min.js"></script>
+

@@ -9058,7 +9058,7 @@ a.text-dark:focus {
 
 .btn.btn-success {
   color: #fff;
-  background-color: #4caf50;
+  background-color: #27be2d;
   border-color: #4caf50;
   box-shadow: 0 2px 2px 0 rgba(76, 175, 80, 0.14), 0 3px 1px -2px rgba(76, 175, 80, 0.2), 0 1px 5px 0 rgba(76, 175, 80, 0.12);
 }
@@ -13365,10 +13365,10 @@ fieldset[disabled] .form-group .form-control {
 }
 
 .alert {
-  border: 0;
-  border-radius: 3px;
+  border: 5px;
+  border-radius: 8px;
   position: relative;
-  padding: 20px 15px;
+  padding: 10px 15px;
   line-height: 20px;
 }
 
@@ -16794,7 +16794,7 @@ label {
 .card.bg-info,
 .card.card-rotate.bg-info .front,
 .card.card-rotate.bg-info .back {
-  background: linear-gradient(60deg, #73A1AC, rgb(102, 162, 172));
+  background: linear-gradient(60deg, #5e93b8, rgb(94, 139, 166));
 }
 
 .card .card-header-success .card-icon,
@@ -16803,7 +16803,7 @@ label {
 .card.bg-success,
 .card.card-rotate.bg-success .front,
 .card.card-rotate.bg-success .back {
-  background: linear-gradient(60deg, #66bb6a, #43a047);
+  background: linear-gradient(60deg, #27be2d, #43a047);
 }
 
 .card .card-header-warning .card-icon,

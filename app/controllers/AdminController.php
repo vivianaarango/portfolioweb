@@ -23,6 +23,9 @@ class AdminController extends ControllerBase
   
     }
 
+    /*
+    Editar proyecto
+    */
     public function editAction()
     {   
         if ($this->request->isPost()){
@@ -44,12 +47,45 @@ class AdminController extends ControllerBase
                     $project->text3 = isset($post['text3']) ? $post['text3'] : '';
                     $project->text4 = $post['text4'];
 
-                    if ( $project->save() ){ 
-                        $this->flash->success('Hemos actualizado los datos de tu proyecto !');
+                    if ( (!empty($_FILES["image"])) && ($_FILES['image']['error'] == 0) ) {
+    
+                        //$filename = $post['text1'];
+                        $filename = $_FILES['image']['name'];
+                        $ext = substr($filename, strrpos($filename, '.') + 1);
+                        $file_parts = pathinfo($_FILES["image"]["name"]);
+                        $ext = $file_parts['extension'];
+        
+                        if ( ( $ext=="png" || $ext=="jpg" || $ext=="jpeg") && $_FILES["image"]["size"] < 10000000 ) {
+        
+                            $newname = __DIR__.'/proyectos/'.$filename.".jpg";
+                   
+                            if (!file_exists($newname)) {
+                        
+                                if ( (move_uploaded_file($_FILES['image']['tmp_name'], $newname)) ) {
+                                    $project->image = $newname;
+                                    if ( $project->save() ){ 
+                                        $this->flash->success('Hemos creado el proyecto correctamente');
+                                    } else {
+                                        $this->flash->error('No hemos podido actualizar los datos');
+                                    }
+                                } else {
+                                    $this->flash->error("Error al guardar la imagen.");
+                                }
+                            } else {
+                                $this->flash->error("Error: Archivo ".$_FILES["image"]["name"]." ya existe");
+                            }
+                        } else {
+                            $this->flash->error("Error: Solo se pueden cargar imagenes .jpg con un tamaño por debajo de 350Kb");
+                        }
                     } else {
-                        $this->flash->error('No hemos podido actualizar los datos');
+                        if ( $project->save() ){ 
+                            $this->flash->success('Hemos actualizado los datos de tu proyecto !');
+                        } else {
+                            $this->flash->error('No hemos podido actualizar los datos');
+                        }
                     }
                 } 
+
                 $this->response->redirect('admin');
             }
 
@@ -60,7 +96,9 @@ class AdminController extends ControllerBase
     }
 
  
-
+    /*
+    * Crear nuevo proyecto 
+    */
     public function newAction()
     {   
         if ($this->request->isPost()){
@@ -75,29 +113,41 @@ class AdminController extends ControllerBase
             $project->text3 = isset($post['text3']) ? $post['text3'] : '';
             $project->text4 = $post['text4'];
 
-            if ($this->request->hasFiles() == true) {
 
-                $folder = "proyectos/";
+            if ( (!empty($_FILES["image"])) && ($_FILES['image']['error'] == 0) ) {
+    
+                //$filename = $post['text1'];
+                $filename = $_FILES['image']['name'];
+                $ext = substr($filename, strrpos($filename, '.') + 1);
+                $file_parts = pathinfo($_FILES["image"]["name"]);
+                $ext = $file_parts['extension'];
 
-                $origen = $_FILES["image"]["tmp_name"];
-                $destino = $folder.$_FILES['image']['name'];
+                if ( ( $ext=="png" || $ext=="jpg" || $ext=="jpeg") && $_FILES["image"]["size"] < 10000000 ) {
 
-                if (@move_uploaded_file($origen, $destino)) {
-                    $this->flash->warning("siks.");
-                }else{
-                    $this->flash->warning("noks.");
+                    $newname = __DIR__.'/proyectos/'.$filename;
+        
+                    if (!file_exists($newname)) {
+                
+                        if ( (move_uploaded_file($_FILES['image']['tmp_name'], $newname)) ) {
+
+                            $project->image = $newname;
+                            
+                            if ( $project->save() ){ 
+                                $this->flash->success('Hemos creado el proyecto correctamente');
+                            } else {
+                                $this->flash->error('No hemos podido crear el proyecto');
+                            }
+                        } else {
+                            $this->flash->error("Error al guardar la imagen.");
+                        }
+                    } else {
+                        $this->flash->error("Error: Archivo ".$_FILES["image"]["name"]." ya existe");
+                    }
+                } else {
+                    $this->flash->error("Error: Solo se pueden cargar imagenes .jpg con un tamaño por debajo de 350Kb");
                 }
-
-	        } else {
-	            $this->flash->warning("No se pudo cargar la imagen.");
-	        }
-
-            $project->image = 'nada';
-
-            if ( $project->save() ){ 
-                $this->flash->success('Hemos creado el proyecto correctamente');
             } else {
-                $this->flash->error('No hemos podido crear el proyecto');
+                $this->flash->error("Error: No se selecciono un archivo");
             }
 
             $this->response->redirect('admin');
