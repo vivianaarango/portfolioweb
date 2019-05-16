@@ -835,6 +835,7 @@ label {
     }
 }
 
+/***/
 @media screen and (max-width : 1510px){
     .contact-div {
         padding-left: 1%;
@@ -851,6 +852,23 @@ label {
     .block-detail-btn {
         width: 45%;
     }
+
+    .btn-contact {
+        font-size: 16px;
+    }
+
+    .text1-view-1 {
+        font-size: 30px;
+    }
+
+    .text3-view-1 {
+        font-size: 24px;
+    }
+
+    .text4-view-1 {
+        font-size: 20px;
+    }
+
 }
 
 @media screen and (max-width : 1420px){

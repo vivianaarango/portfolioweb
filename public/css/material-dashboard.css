@@ -13412,7 +13412,7 @@ fieldset[disabled] .form-group .form-control {
 }
 
 .alert-success {
-  background-color: #0d140d;;
+  background-color: #3d9024;;;
   border-color: #d6e9c6;
   color: #3c763d;
 }
@@ -13809,7 +13809,8 @@ h2.title {
 .nav-tabs .nav-item .nav-link:hover,
 .nav-tabs .nav-item .nav-link:focus {
   border: 0 !important;
-  color: #fff !important;
+  color: #ffffffe6 !important;
+  background: #042332;
   font-weight: 500;
 }
 
@@ -13820,6 +13821,7 @@ h2.title {
 
 .nav-tabs .nav-item .material-icons {
   margin: -1px 5px 0 0;
+  vertical-align: middle;
 }
 
 .nav-tabs .nav-item .nav-link.active {

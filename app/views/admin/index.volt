@@ -43,7 +43,21 @@
             <div class="content">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-lg-3 col-md-6 col-sm-6 col-lg-offset-6 col-md-offset-6">
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-lg-offset-9 col-md-offset-9">
+                            <div class="nav-tabs-navigation">
+                                <div class="nav-tabs-wrapper">
+                                    <ul class="nav nav-tabs pull-right" data-tabs="tabs">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="{{url('admin/new')}}" data-toggle="tab">
+                                            <i class="material-icons">control_point</i> Nuevo proyecto
+                                            <div class="ripple-container"></div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="col-lg-3 col-md-6 col-sm-6 col-lg-offset-6 col-md-offset-6">
                             <div class="card card-stats">
                                 <div class="card-header card-header-info card-header-icon">
                                     <div class="card-icon"><i class="material-icons">content_copy</i></div>
@@ -54,14 +68,14 @@
                         </div>
 
                         <div class="col-lg-3 col-md-6 col-sm-6">
-                            <a href={{url('admin/new')}}><div class="card card-stats">
+                            <a href="{{url('admin/new')}}"><div class="card card-stats">
                                 <div class="card-header card-header-success card-header-icon">
                                     <div class="card-icon"><i class="material-icons">control_point</i></div>
                                     <p class="card-category">Crear nuevo</p>
                                     <h3 class="card-title">proyecto</h3>
                                 </div>
                             </div></a>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="col-lg-12 col-md-12">
                         <div class="card">

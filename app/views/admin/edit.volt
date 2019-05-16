@@ -47,7 +47,7 @@
                                 <p class="card-category">Completa tu proyecto</p>
                                 </div>
                                 <div class="card-body">
-                                {{ form("admin/edit", "method":"post") }}
+                                {{ form("admin/edit", "method":"post", 'enctype': 'multipart/form-data') }}
                                     <input name='validate' type="hidden" value="1">
                                     <input name='id' type="hidden" value='{{ project.id_project }}'>
                                     <div class="row">
@@ -166,7 +166,21 @@
                                             <input type="file" id='image' name="image"><br><br>
                                         </div>
                                     </div>
-                                    <button type="submit" class="btn btn-success pull-right">Editar Proyecto</button>
+                                    
+                                    <div class="col-lg-3 col-md-6 col-sm-6 col-lg-offset-9 col-md-offset-9">
+                                        <div class="nav-tabs-navigation">
+                                            <div class="nav-tabs-wrapper">
+                                                <ul class="nav nav-tabs pull-right" data-tabs="tabs">
+                                                    <li class="nav-item">
+                                                        <button type="submit" class="nav-link">
+                                                            <i class="material-icons">done</i> Crear proyecto
+                                                        </button>   
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
                                     <div class="clearfix"></div>
                                 {{ end_form() }}
                                 </div>

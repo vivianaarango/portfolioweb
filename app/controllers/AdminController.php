@@ -39,8 +39,8 @@ class AdminController extends ControllerBase
                 $project = Projects::findFirst($post['id']);
 
                 if (isset($project->id_project)){
+
                     $project->color = $post['color'];
-                    $project->image = 'nada';
                     $project->text_alignment = $post['align'];
                     $project->text1 = $post['text1'];
                     $project->text2 = $post['text2'];
@@ -48,7 +48,6 @@ class AdminController extends ControllerBase
                     $project->text4 = $post['text4'];
 
                     if ( (!empty($_FILES["image"])) && ($_FILES['image']['error'] == 0) ) {
-    
                         //$filename = $post['text1'];
                         $filename = $_FILES['image']['name'];
                         $ext = substr($filename, strrpos($filename, '.') + 1);
@@ -57,12 +56,13 @@ class AdminController extends ControllerBase
         
                         if ( ( $ext=="png" || $ext=="jpg" || $ext=="jpeg") && $_FILES["image"]["size"] < 10000000 ) {
         
-                            $newname = __DIR__.'/proyectos/'.$filename.".jpg";
+                            $newname = __DIR__ . '/../../public/images/proyectos/'.$filename;
+                            $bd_image = '../images/proyectos/'.$filename;
                    
                             if (!file_exists($newname)) {
                         
                                 if ( (move_uploaded_file($_FILES['image']['tmp_name'], $newname)) ) {
-                                    $project->image = $newname;
+                                    $project->image = $bd_image;
                                     if ( $project->save() ){ 
                                         $this->flash->success('Hemos creado el proyecto correctamente');
                                     } else {
@@ -124,13 +124,14 @@ class AdminController extends ControllerBase
 
                 if ( ( $ext=="png" || $ext=="jpg" || $ext=="jpeg") && $_FILES["image"]["size"] < 10000000 ) {
 
-                    $newname = __DIR__.'/proyectos/'.$filename;
-        
+                    $newname = __DIR__ . '/../../public/images/proyectos/'.$filename;
+                    $bd_image = '../images/proyectos/'.$filename;
+
                     if (!file_exists($newname)) {
                 
                         if ( (move_uploaded_file($_FILES['image']['tmp_name'], $newname)) ) {
 
-                            $project->image = $newname;
+                            $project->image = $bd_image;
                             
                             if ( $project->save() ){ 
                                 $this->flash->success('Hemos creado el proyecto correctamente');
