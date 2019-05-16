@@ -495,7 +495,7 @@
         {% endfor %}
 
         <!-- view 8 -->
-        <div vs-anchor="view-8" class="mainview view8" style='height:1000px'>
+        <div vs-anchor="view-8" class="mainview view8" id='contact-view'>
             <div class="row menu">
                 <a href="#view-1" class="vs-anchor">
                     <div class="col-md-2 main-block">
@@ -615,5 +615,7 @@
             changeWhenAnim: false,
             viewsHeight: [height, height, height, 600, 600, 600, 600, 600, 600, 600, 600, 600]
         });
+
+        document.getElementById("contact-view").style.height = height+'px';
     });
 </script>
