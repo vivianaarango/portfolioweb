@@ -479,13 +479,13 @@
                 {% endif %}
                 
                 {% if item.color == 1 %}
-                    <div class="row btn-down">
+                    <div class="row btn-down container-view-more">
                         <div class='block-view-more'>
                             <center><button type="button" class='btn btn-view-more border-blue'>Ver más</button></center>
                         </div>
                     </div>
                 {% else %}
-                    <div class="row btn-down">
+                    <div class="row btn-down container-view-more">
                         <div class='block-view-more' style='padding-top: 2%;'>
                             <center><button type="button" class='btn btn-view-more border-purple'>Ver más</button></center>
                         </div>

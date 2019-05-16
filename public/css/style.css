@@ -869,7 +869,68 @@ label {
         font-size: 20px;
     }
 
+    .button-description {
+        top: 46%;
+    }
+    
+    .button-description-1 {
+        top: 46%;
+    }
+
+    .text1-view-2 {
+        font-size: 30px;
+    }
+
+    .text2-view-2 {
+        font-size: 14px;
+    }
+
+    .text3-view-2 {
+        font-size: 14px;
+    }
+
+    .text2-view-4 {
+        font-size: 50px;
+    }
+
+    .text1-view-4 {
+        font-size: 25px;
+    }
+
+    .text3-view-4 {
+        font-size: 14px;
+    }
+
+    .text1-view-5 {
+        font-size: 25px;
+    }
+
+    .text3-view-5 {
+        font-size: 14px;
+    }
+
+    .text2-view-7 {
+        font-size: 50px;
+    }
+
+    .text1-view-7 {
+        font-size: 25px;
+    }
+
+    .text1-view-2 {
+        font-size: 25px;
+    }
+
+    .btn-curriculum {
+        font-size: 16px;
+    }
+
+    .text3-view-7 {
+        font-size: 14px;
+    }
 }
+
+
 
 @media screen and (max-width : 1420px){
 
@@ -878,3 +939,15 @@ label {
     }
 }
 
+
+
+.container-view-more {
+    position:relative;
+}
+
+.block-view-more {
+    position: absolute;
+    bottom: -100px;
+    right: 0px;
+    left: 10px;
+}
