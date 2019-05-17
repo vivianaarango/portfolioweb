@@ -14,7 +14,7 @@
     <div>
     <div class="mainbag">       
         <!-- View 1 -->
-        <div vs-anchor="view-1" class="mainview view-detail-1">
+        <div vs-anchor="view-1" class="mainview view-detail" style='background-image: url(../images/Fondo06.jpg)'>
             <div class="row menu">
                 <a href="#view-1" class="vs-anchor">
                     <div class="col-md-2 main-block">
@@ -71,7 +71,7 @@
         </div>
  
         <!-- View 2 -->
-        <div vs-anchor="view-2" class="mainview view5">
+        <div vs-anchor="view-2" class="mainview view-detail" style='background-image: url(../images/Fondo07.jpg)'>
             <div class="row menu">
                 <a href="#view-1" class="vs-anchor">
                     <div class="col-md-2 main-block">
@@ -103,22 +103,26 @@
                     </div>
                 </a>
             </div>
-            <section class='block-view-5'>
-                <label class='text1-view-5'>Nuevos diseños</label><br>
-                <label class='text2-view-5'>Tarjetas de crédito</label><br>
-                <label class='text1-view-5'>Banco Pichincha</label><br><br>
-                <label class='text3-view-5'>Desarrollo de comunicación publicitaria para lanzamiento</label><br>
-                <label class='text3-view-5'>de nuevas tarjetas de crédito Banco Pichincha Colombia.</label>
-            </section>
-            <div class="row btn-down">
-                <div class='block-view-more' style='padding-top: 2%;'>
-                    <center><button type="button" class='btn btn-view-more border-purple'>Ver más</button></center>
+            <section class='block-detail-2'>
+                <div class='row' style='margin-top:5px;'>
+                    <label class='text1-detail-2'>
+                        Mi marca personal es un trabajo que ha pasado
+                        por múltiples procesos, desde su primer concepto
+                        como un proyecto académico, pasando por tres
+                        evoluciones diferentes, hasta llegar a la imagen que
+                        he usado como referente y presentación de mi
+                        trabajo como profesional en diseño.
+                    </label>
+                    <br>
                 </div>
+            </section>
+            <div class='view-design'>
+                <center><button type="submit" class='btn btn-view-design'>Ver diseño</button></center>
             </div>
         </div>
 
         <!-- View 3 -->
-        <div vs-anchor="view-3" class="mainview view6">
+        <div vs-anchor="view-3" class="mainview">
             <div class="row menu">
                 <a href="#view-1" class="vs-anchor">
                     <div class="col-md-2 main-block">
@@ -151,165 +155,7 @@
                 </a>
             </div>
             <section class='block-view-6'>
-                <label class='text1-view-6'>Invitación</label><br>
-                <label class='text2-view-6'>Feria Colwagen Audi</label><br>
-                <label class='text1-view-6'>convenio Banco Pichincha</label><br><br>
-                <label class='text3-view-6'>Desarrollo de invitación clientes banco para convenio</label><br>
-                <label class='text3-view-6'>Colwagen Audi - Banco Pichincha feria del vehiculo</label><br>
-                <label class='text3-view-6'>Corferias 2017.</label>
             </section>
-            <div class="row btn-down">
-                <div class='block-view-more-6'>
-                    <center><button type="button" class='btn btn-view-more border-purple'>Ver más</button></center>
-                </div>
-            </div>
-        </div>
-
-        <!-- View 4 -->
-        <div vs-anchor="view-4" class="mainview view7">
-            <div class="row menu">
-                <a href="#view-1" class="vs-anchor">
-                    <div class="col-md-2 main-block">
-                        <img style="width: 110px; height: 110px;" src="../images/Icono01.png" alt="LOGO">
-                    </div>
-                </a>
-                <a target="_blank" href="{{url('web/index#view-2')}}">
-                    <div class="col-md-2 main-block option">
-                        <label class='title'>1. Sobre mi</label>
-                        <label class='description'>Mira aqui una breve descripción sobre mi.</label>
-                    </div>
-                </a>
-                <a target="_blank" href="{{url('web/index#view-3')}}">
-                    <div class="col-md-3 main-block option">
-                        <label class='title'>2. Estudios y experiencia</label>
-                        <label class='description'>Conoce mi trayectoria academica y experiencia laboral.</label>
-                    </div>
-                </a>
-                <a target="_blank" href="{{url('web/index#view-4')}}">
-                    <div class="col-md-2 main-block option">
-                        <label class='title'>3. Portafolio</label>
-                        <label class='description'>¡Basta de palabras! mira mis trabajos aqui.</label>
-                    </div>
-                </a>
-                <a target="_blank" href="{{url('web/index#view-8')}}">
-                    <div class="col-md-2 main-block option">
-                        <label class='title'>4. Contacto</label>
-                        <label class='description'>Estoy listo para comenzar cuando decidas.</label>
-                    </div>
-                </a>
-            </div>
-            <section class='block-view-7'>
-                <label class='text1-view-7'>Rediseño</label><br>
-                <label class='text2-view-7'>Imagen Producto</label><br>
-                <label class='text1-view-7'>Crédito de Vehículo</label><br><br>
-                <label class='text3-view-7'>Creación de nueva identidad producto “crédito de vehiculo”</label><br>
-                <label class='text3-view-7'>Banco Pichincha vigente hasta su renovación de marca en</label><br>
-                <label class='text3-view-7'>el año 2018.</label>
-            </section>
-            <div class="row btn-down">
-                <div class='block-view-more-7'>
-                    <center><button type="button" class='btn btn-view-more border-blue'>Ver más</button></center>
-                </div>
-            </div>
-        </div>
-        <!-- view 5 -->
-        <div vs-anchor="view-5" class="mainview view8" style='height:1000px'>
-            <div class="row menu">
-                <a href="#view-1" class="vs-anchor">
-                    <div class="col-md-2 main-block">
-                        <img style="width: 110px; height: 110px;" src="../images/Icono02.png" alt="LOGO">
-                    </div>
-                </a>
-                <a target="_blank" href="{{url('web/index#view-2')}}">
-                    <div class="col-md-2 main-block option">
-                        <label class='title-3'>1. Sobre mi</label>
-                        <label class='description-3 resalt-3'>Mira aqui una breve descripción sobre mi.</label>
-                    </div>
-                </a>
-                <a target="_blank" href="{{url('web/index#view-3')}}">
-                    <div class="col-md-3 main-block option">
-                        <label class='title-3'>2. Estudios y experiencia</label>
-                        <label class='description-3 resalt-3'>Conoce mi trayectoria academica y experiencia laboral.</label>
-                    </div>
-                </a>
-                <a target="_blank" href="{{url('web/index#view-4')}}">
-                    <div class="col-md-2 main-block option">
-                        <label class='title-3'>3. Portafolio</label>
-                        <label class='description-3 resalt-3'>¡Basta de palabras! mira mis trabajos aqui.</label>
-                    </div>
-                </a>
-                <a target="_blank" href="{{url('web/index#view-8')}}">
-                    <div class="col-md-2 main-block option">
-                        <label class='title-3'>4. Contacto</label>
-                        <label class='description-3 resalt-3'>Estoy listo para comenzar cuando decidas.</label>
-                    </div>
-                </a>
-            </div>
-            <section class='block-view-2'>
-                <center>
-                    <label class='text1-view-2'>Contacto</label>
-                </center>
-                <center>
-                    <label class='text2-view-2'>¿Estamos listos? ¡cuando quieras escríbeme y comencemos a trabajar!</label>
-                </center>
-                {{ form("web/sendemail", "method":"post") }}
-                    <div class='row block-contact'>
-                        <div class='col-md-1 sub-block-contact'>
-                            <input name='name_user' class='field' type="text" placeholder='Tu nombre'/>
-                        </div>
-                        <div class='col-md-1 sub-block-contact'>
-                            <input name='email' class='field' type="text" placeholder='Tu correo'/>
-                        </div>
-                    </div>
-                    <div class='row block-contact-1'>
-                        <textarea name='message' rows="6" placeholder='Tu mensaje' class='text-area-contact'></textarea>
-                    </div>
-                    <div class='curriculum'>
-                        <center><button type="submit" class='btn btn-curriculum'>Enviar</button></center>
-                    </div>
-                {{ end_form() }}
-                <div class='footer'>
-                    <div class='row footer-contact'>
-                        <center class="col-md-9 section-contact-1">
-                         
-                                <div class="col-md-3">
-                                    <img style="width:30px; height:30px;" src="../images/Icono03.png" alt="LOGO"><br>
-                                    <label class='description'>(+57)318 392 2306</label>
-                                </div>
-                                <div class="col-md-3">
-                                    <img style="width:30px; height:30px;" src="../images/Icono04.png" alt="LOGO"><br>
-                                    <label class='description'>idmr13@gmail.com</label>
-                                </div>
-                                <div class="col-md-3">
-                                    <img style="width:30px; height:30px;" src="../images/Icono05.png" alt="LOGO"><br>
-                                    <label class='description'>/iDeaDavid</label>
-                                </div>
-                                <div class="col-md-3">
-                                    <img style="width:30px; height:30px;" src="../images/Icono06.png" alt="LOGO"><br>
-                                    <label class='description'>/david_mr18</label>
-                                </div>       
-                         
-                        </center>
-                        <div class="col-md-3 section-contact-2">
-                            <div class="col-md-2">
-                                <a href="#view-1"><img src="../images/Icono10.png" class=""></a>
-                            </div>
-                            <div class="col-md-1" style='padding-left: 12%;'>
-                                <a href=''><img style="width:50px; height:50px;" src="../images/Icono07.png" alt=""></a>
-                            </div>
-                        </div>
-                    </div>
-                    <center><hr class="hr2"></center>
-                    <div class='row' style='padding-left:30%; padding-right:1%'>
-                        <div class="col-md-1" style='width:5%;'>
-                            <img style="width:30px; height:30px;" src="../images/Icono05.png" alt="LOGO"><br>
-                        </div>
-                        <div class="col-md-1" style='width:60%'>
-                            <label class='description-footer'>Diseñado por iDea Design, desarrollado por Lorem Ipsum, derechos reservados.</label>
-                        </div>
-                    </div>
-                </div>
-            <section>
         </div>
     </div>
 </body>
@@ -327,11 +173,11 @@
         let height = window.innerHeight;
         // Sets viewScroller
         $('.mainbag').viewScroller({
-            animSpeedMainView: 2000,
+            animSpeedMainView: 700,
             animEffectMainViewCss3: 'cubic-bezier(0.42, 0, 0.58, 1)',
             useScrollbar: false,
             changeWhenAnim: false,
-            viewsHeight: [height, 600, 600, 600, 600, 600, 600, 600, 600]
+            viewsHeight: [height, height, height, height]
         });
     });
 </script>

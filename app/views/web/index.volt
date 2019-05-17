@@ -262,6 +262,9 @@
                     <div class="container1 morado col-md-1">
                         <hr class="hr1">
                     </div>
+                    <div class="container1 amarillo col-md-1" style='width: 1px;'>
+                        <hr class="hr1">
+                    </div>
                 </div>
                 <div class="row timeline-years">
                     <div class="container4 col-md-1">
@@ -300,61 +303,46 @@
                     <div class="container3 col-md-1">
                         <label class='txt-year'>2018</label>
                     </div>
-                    <div class="container3 col-md-1" style='padding-left: 80px;'>
+                    <div class="container3 col-md-1">
                         <label class='txt-year'>2019</label>
                     </div>
+                    <div class="container3 col-md-1">
+                        <label class='txt-year'>2020</label>
+                    </div>
                 </div>
-                <div class="row timeline-2 col-md-12">
-                    <div class='col-md-1' style='width:4.66%'>
-                        <div class='circulo1 cafe'></div>
-                        <div class='circulo2 azul'></div>
-                    </div>
-                    <div class='col-md-1 line' style='width:30.66%'>
-                        <div class='container5'>
-                            <label class='txt-experience'>Técnico en diseño gráfico y publicidad</label><br>
-                            <img style="width:30px; height:30px;" src="../images/Icono11.png">
-                            <label class='txt-place'>Instituto de estudios comerciales INESCO</label><br>
-                            <img style="width:30px; height:30px;" src="../images/Icono12.png">
-                            <label class='txt-place'>Diseñador gráfico técnico</label><br>
-                        </div>
-                        <div class='container6'>
-                            <label class='txt-experience'>Diseñador gráfico profesional</label><br>
-                            <img style="width:30px; height:30px;" src="../images/Icono11.png">
-                            <label class='txt-place'>Corporación Escuela de Artes y Letras</label><br>
-                            <img style="width:30px; height:30px;" src="../images/Icono12.png">
-                            <label class='txt-place'>Diseñador gráfico profesiona</label><br>
-                        </div>
-                    </div>
-                    <div class='col-md-1' style='width:4.66%'>
-                        <div class='circulo1 naranja'></div>
-                        <div class='circulo2 verde'></div>
-                    </div>
-                    <div class='col-md-1 line' style='width:29.66%'>
-                        <div class='container5'>
-                            <label class='txt-experience'>Prácticas laborales</label><br>
-                            <img style="width:30px; height:30px;" src="../images/Icono11.png">
-                            <label class='txt-place'>Teatro Mayor Julio Mario Santo Domingo</label><br>
-                        </div>
-                        <div class='container6' style='padding-top: 18%;'>
-                            <label class='txt-experience'>Creativo gráfico</label><br>
-                            <img style="width:30px; height:30px;" src="../images/Icono11.png">
-                            <label class='txt-place'>On Marketing Ideas SAS</label><br>
-                        </div>
-                    </div>
-                    <div class='col-md-1' style='width:4.66%'>
-                        <div class='circulo1 gris'></div>
-                        <div class='circulo2 morado'></div>
-                    </div>
-                    <div class='col-md-1' style='width:24.66%'>
-                        <div class='container5'>
-                            <label class='txt-experience'>Freelance</label><br>
-                            <img style="width:30px; height:30px;" src="../images/Icono11.png">
-                            <label class='txt-place'>Diseñador gráfico Freelance</label><br>
-                        </div>
-                        <div class='container6' style='padding-top: 25%;'>
-                            <label class='txt-experience'>Diseñador UI UX</label><br>
-                            <img style="width:30px; height:30px;" src="../images/Icono11.png">
-                            <label class='txt-place'>Logisticapp SAS</label><br>
+                <div class="container-fluid contain-carousel">
+                    <div class="row">
+                        <div class="MultiCarousel" data-items="1,3,3,3" data-slide="1" id="MultiCarousel"  data-interval="1000">
+                            <div class="MultiCarousel-inner">
+                                {% for item in experience %}
+                                    <div class="item">
+                                        <div class="pad15 row">
+                                            <div class='col-md-1 container-circle'>
+                                                <div class='circulo1' style='background-color: {{ item.color }}'></div>
+                                            </div>
+                                            <div class='col-md-1 container-exp-info'>
+                                                {% if item.type == 1  %}
+                                                    <label class='txt-title'>Estudio:</label><br>
+                                                {% else %}
+                                                    <label class='txt-title'>Experiencia:</label><br>
+                                                {% endif %}
+
+                                                <label class='txt-experience'>{{ item.title }}</label><br>
+
+                                                {% if item.place != null  %}
+                                                    <label class='txt-place'>{{ item.place }}</label><br>
+                                                {% endif %}    
+
+                                                {% if item.time != null  %}
+                                                    <label class='txt-place'>{{ item.time }}</label><br>
+                                                {% endif %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                            <button class="btn btn-primary leftLst flechita"><</button>
+                            <button class="btn btn-primary rightLst flechita">></button>
                         </div>
                     </div>
                 </div>
@@ -366,7 +354,6 @@
         </div>
 
         {% for item in projects %}
-            <!-- View 4 -->
             <div vs-anchor="view-4" class="mainview view4" style='background-image: url({{ item.image }})'>
                 {% if item.color == 1  %}
                     <div class="row menu">
@@ -607,6 +594,7 @@
     $(document).ready(function() {
         
         let height = window.innerHeight;
+
         // Sets viewScroller
         $('.mainbag').viewScroller({
             animSpeedMainView: 600,
@@ -617,5 +605,113 @@
         });
 
         document.getElementById("contact-view").style.height = height+'px';
+    });
+
+
+    $(document).ready(function () {
+        var itemsMainDiv = ('.MultiCarousel');
+        var itemsDiv = ('.MultiCarousel-inner');
+        var itemWidth = "";
+
+        $('.leftLst, .rightLst').click(function () {
+            var condition = $(this).hasClass("leftLst");
+            if (condition)
+                click(0, this);
+            else
+                click(1, this)
+        });
+
+        ResCarouselSize();
+
+
+
+
+        $(window).resize(function () {
+            ResCarouselSize();
+        });
+
+        //this function define the size of the items
+        function ResCarouselSize() {
+            var incno = 0;
+            var dataItems = ("data-items");
+            var itemClass = ('.item');
+            var id = 0;
+            var btnParentSb = '';
+            var itemsSplit = '';
+            var sampwidth = $(itemsMainDiv).width();
+            var bodyWidth = $('body').width();
+            $(itemsDiv).each(function () {
+                id = id + 1;
+                var itemNumbers = $(this).find(itemClass).length;
+                btnParentSb = $(this).parent().attr(dataItems);
+                itemsSplit = btnParentSb.split(',');
+                $(this).parent().attr("id", "MultiCarousel" + id);
+
+
+                if (bodyWidth >= 1200) {
+                    incno = itemsSplit[3];
+                    itemWidth = sampwidth / incno;
+                }
+                else if (bodyWidth >= 992) {
+                    incno = itemsSplit[2];
+                    itemWidth = sampwidth / incno;
+                }
+                else if (bodyWidth >= 768) {
+                    incno = itemsSplit[1];
+                    itemWidth = sampwidth / incno;
+                }
+                else {
+                    incno = itemsSplit[0];
+                    itemWidth = sampwidth / incno;
+                }
+                $(this).css({ 'transform': 'translateX(0px)', 'width': itemWidth * itemNumbers });
+                $(this).find(itemClass).each(function () {
+                    $(this).outerWidth(itemWidth);
+                });
+
+                $(".leftLst").addClass("over");
+                $(".rightLst").removeClass("over");
+
+            });
+        }
+
+
+        //this function used to move the items
+        function ResCarousel(e, el, s) {
+            var leftBtn = ('.leftLst');
+            var rightBtn = ('.rightLst');
+            var translateXval = '';
+            var divStyle = $(el + ' ' + itemsDiv).css('transform');
+            var values = divStyle.match(/-?[\d\.]+/g);
+            var xds = Math.abs(values[4]);
+            if (e == 0) {
+                translateXval = parseInt(xds) - parseInt(itemWidth * s);
+                $(el + ' ' + rightBtn).removeClass("over");
+
+                if (translateXval <= itemWidth / 2) {
+                    translateXval = 0;
+                    $(el + ' ' + leftBtn).addClass("over");
+                }
+            }
+            else if (e == 1) {
+                var itemsCondition = $(el).find(itemsDiv).width() - $(el).width();
+                translateXval = parseInt(xds) + parseInt(itemWidth * s);
+                $(el + ' ' + leftBtn).removeClass("over");
+
+                if (translateXval >= itemsCondition - itemWidth / 2) {
+                    translateXval = itemsCondition;
+                    $(el + ' ' + rightBtn).addClass("over");
+                }
+            }
+            $(el + ' ' + itemsDiv).css('transform', 'translateX(' + -translateXval + 'px)');
+        }
+
+        //It is used to get some elements from btn
+        function click(ell, ee) {
+            var Parent = "#" + $(ee).parent().attr("id");
+            var slide = $(Parent).attr("data-slide");
+            ResCarousel(ell, Parent, slide);
+        }
+
     });
 </script>

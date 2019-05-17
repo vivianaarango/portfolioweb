@@ -12,9 +12,16 @@ class WebController extends ControllerBase
         $projects = Projects::find(array(
             "order" => "id_project ASC"
         ));
-        //print_r($projects->toArray());die;
+
         $this->view->projects = $projects;
         $this->view->count_projects = count($projects);
+
+        $experience = Experience::find(array(
+            "order" => "id_experience ASC"
+        ));
+        
+        $this->view->experience = $experience;
+        $this->view->count_experience = count($experience);
     }
 
     /*

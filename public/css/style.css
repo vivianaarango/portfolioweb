@@ -199,6 +199,12 @@
 }
 
 /* timeline*/
+.contain-timeline {
+    width: 100%;
+    height: 160px;
+    background-color: #e5e5e5;
+}
+
 .container1 {
 	width: 5.55%;
 	height: 16px;
@@ -208,7 +214,7 @@
 }
 
 .container2 {
-	width: 11.1%;
+	width: 9.1%;
 	height: 16px;
 	border-top: 1px solid gray;  border-right: 0.5px solid gray;  border-bottom: 1px solid gray;  
 	display: flex;
@@ -223,7 +229,7 @@
 }
 
 .container4 {
-	width: 10.1%;
+	width: 8.1%;
 	height: 16px;
 	display: flex;
     align-items: center;
@@ -257,6 +263,10 @@
 
 .morado {
 	background-color: #791355;
+}
+
+.amarillo {
+	background-color: #ffeb3b;
 }
 
 .timeline {
@@ -297,12 +307,22 @@
 }
 
 .txt-place {
-    font-size: 14px;
-    color: #acb1b1;
+    font-size: 13px;
+    color: #4B6870;
+    line-height: 0.5px;
+}
+
+.txt-title {
+    font-size: 15px;
+    color: #4B6870;
+    line-height: 0.5px;
 }
 
 .txt-experience {
     color: #4B6870;
+    line-height: 0.5px;
+    font-weight: bold;
+    font-size: 15px;
 }
 
 .container6 {
@@ -347,7 +367,7 @@
 }
 
 .block-view-more {
-    padding-top: 5%;
+    padding-top: 4%;
 }
 
 .btn-view-more {
@@ -555,8 +575,7 @@
 /* Detail views*/
 
 /* view 1 */
-.view-detail-1 {
-    background-image: url(../images/Fondo06.jpg);
+.view-detail {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -603,6 +622,36 @@
     text-align: center;
     padding-top: 4%;
 }
+
+/* view 2 */
+
+.text1-detail-2 {
+    color: #9f9f9f;
+    font-size: 18.5px;
+    margin-top: 2%;
+    text-align: center;
+    padding-right: 30%;
+}
+
+.block-detail-2 {
+    padding-top: 17%;
+    padding-left: 58%;
+    width: 100%;
+}
+
+.btn-view-design {
+    background-color: #90024C;
+    color: #ffffff;
+    font-size: 18px;
+    width: 28%;
+    border-radius: 13px;
+}
+
+.view-design {
+    padding-top: 2%;
+    margin-left: 45%;
+}
+
 /* Styles specific for this example */
 
 
@@ -939,8 +988,9 @@ label {
     }
 }
 
+
 /*1574 - 702*/
-@media screen and (max-width : 1610px){
+@media screen and (max-height : 710px){
 	.title-3 {
         font-size: 13px;
     }
@@ -1056,4 +1106,98 @@ label {
         padding-top: 11%;
     }
     
+}
+
+
+
+/* Carousel */
+
+.contain-carousel {
+    margin-top: 5%;
+}
+.flechita {
+    color: #2a6496;
+    background-color: transparent;
+    font-size: 25px;
+    border-color: transparent;
+}
+
+.flechita:hover {
+    color: #2a6496;
+    background-color: transparent;
+    font-size: 25px;
+    border-color: transparent;
+}
+
+.flechita:active {
+    color: #2a6496;
+    background-color: transparent;
+    font-size: 25px;
+    border-color: transparent;
+}
+
+.flechita:focus {
+    color: #2a6496;
+    background-color: transparent;
+    font-size: 25px;
+    border-color: transparent;
+}
+
+.MultiCarousel { 
+    float: left; 
+    overflow: hidden; 
+    width: 100%; 
+    position:relative; 
+    background-color: #dddcdc;
+    padding-left: 170px;
+    padding-right: 120px!important; 
+}
+
+.MultiCarousel .MultiCarousel-inner { 
+    transition: 1s ease all; 
+    float: left; 
+}
+
+.MultiCarousel .MultiCarousel-inner .item { 
+    float: left;
+}
+
+.MultiCarousel .MultiCarousel-inner .item > div { 
+    
+    /* padding: 10px; */
+    /* margin: 10px; */
+    background: #dedcdc;
+    color: #666;
+}
+
+
+.MultiCarousel .leftLst, .MultiCarousel .rightLst { 
+    position:absolute; 
+    border-radius:50%;
+    top:calc(50% - 20px); 
+}
+
+.MultiCarousel .leftLst { 
+    left:0; 
+}
+
+.MultiCarousel .rightLst { 
+    right:0; 
+}
+
+.MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { 
+    pointer-events: none; 
+    background: transparent; 
+}
+
+.container-exp-info {
+    width: auto;
+    margin-top: 8%;
+    margin-left: 12px;
+    padding-bottom: 35px;
+}
+
+.container-circle {
+    width:4.66%;
+    margin-top: 15.5%;
 }
