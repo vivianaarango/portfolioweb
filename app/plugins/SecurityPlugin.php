@@ -59,7 +59,8 @@ class SecurityPlugin extends Plugin
 			$publicResources = [
 				'index'      => ['index'],
 				'admin'      => ['index', 'view', 'edit', 'delete', 'new'],
-				'web'		 => ['index', 'sendemail', 'detail']	
+				'web'		 => ['index', 'sendemail', 'detail'],
+				'experience' => ['index', 'view', 'edit', 'delete', 'new'],
 			];
 			
 			foreach ($publicResources as $resource => $actions) {

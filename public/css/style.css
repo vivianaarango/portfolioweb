@@ -988,6 +988,25 @@ label {
     }
 }
 
+@media screen and (max-height : 990px) {
+    .button-description {
+        top: 45%;
+    }
+
+    .button-description-1 {
+        top: 45%;
+    }
+}
+
+@media screen and (max-height : 960px) {
+    .button-description {
+        top: 47%;
+    }
+
+    .button-description-1 {
+        top: 47%;
+    }
+}
 
 /*1574 - 702*/
 @media screen and (max-height : 710px){
