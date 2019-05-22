@@ -9,12 +9,12 @@ class ExperienceController extends ControllerBase
 
     public function indexAction()
     {   
-        /* $projects = Projects::find(array(
-            "order" => "id_project ASC"
-         ));
+        $experience = Experience::find(array(
+            "order" => "id_experience ASC"
+        ));
 
-        $this->view->projects = $projects;
-        $this->view->count_projects = count($projects); */
+        $this->view->experience = $experience;
+        $this->view->count_experience = count($experience);
     }
 
 

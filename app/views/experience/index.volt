@@ -67,29 +67,33 @@
                             <div class="card-body table-responsive">
                                 <table class="table table-hover">
                                     <thead class="text-info">
-                                    <th>Color</th>
+                                        <th>Color</th>
+                                        <th>Id</th>
+                                        <th>Tipo</th>
                                         <th>Titulo</th>
                                         <th>Lugar</th>
-                                        <th>Color</th>
                                         <th></th>
                                         <th></th>
                                         <th></th>
                                     </thead>
                                     <tbody>
-                                        {% for item in projects %}
+                                        {% for item in experience %}
                                             <tr>
                                                 <td>
-                                                    {% if item.color == 1 %}
-                                                        <center><div class='div-blue'></div></center>
+                                                    <center><div class='div-color' style="background-color: {{ item.color }}"></div></center>
+                                                </td>
+                                                <td>{{ item.id_experience }}</td>
+                                                <td>
+                                                    {% if item.type == 1 %}
+                                                        Estudio
                                                     {% else %}
-                                                        <center><div class='div-red'></div></center>
+                                                        Experiencia laboral
                                                     {% endif %}
                                                 </td>
-                                                <td><center>{{ item.id_project }}</center></td>
-                                                <td>{{ item.text1 }} - {{ item.text2 }}</td>
-                                                <td>{{ item.text4}}</td>
+                                                <td>{{ item.title }}</td>
+                                                <td>{{ item.place }}</td>
                                                 <td>
-                                                    {{ form('admin/view', 'role': 'form') }}
+                                                    {{ form('experience/view', 'role': 'form') }}
                                                         <input type='hidden' name='id' id='id' value={{ item.id_project }}>
                                                         <button class="nav-link options" type='submit'>
                                                             <i  style='color: #456168;' class="material-icons">visibility</i>
@@ -97,7 +101,7 @@
                                                     {{ end_form() }} 
                                                 </td>
                                                 <td>
-                                                    {{ form('admin/edit', 'role': 'form') }}
+                                                    {{ form('experience/edit', 'role': 'form') }}
                                                         <input type='hidden' name='id_project' id='id_project' value={{ item.id_project }}>
                                                         <button class="nav-link options" type='submit'>
                                                             <i style='color: #456168;' class="material-icons">edit</i>
@@ -105,7 +109,7 @@
                                                     {{ end_form() }} 
                                                 </td>
                                                 <td>
-                                                    {{ form('admin/delete', 'role': 'form') }}
+                                                    {{ form('experience/delete', 'role': 'form') }}
                                                         <input type='hidden' name='id_pjt' id='id_pjt' value={{ item.id_project }}>
                                                         <button class="nav-link options" type='submit'>
                                                             <i style='color: #456168;' class="material-icons">delete_sweep</i>

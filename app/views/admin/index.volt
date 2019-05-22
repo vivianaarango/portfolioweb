@@ -104,7 +104,7 @@
                                                         <center><div class='div-red'></div></center>
                                                     {% endif %}
                                                 </td>
-                                                <td><center>{{ item.id_project }}</center></td>
+                                                <td>{{ item.id_project }}</td>
                                                 <td>{{ item.text1 }} - {{ item.text2 }}</td>
                                                 <td>{{ item.text4}}</td>
                                                 <td>
