@@ -64,9 +64,9 @@ class AdminController extends ControllerBase
                                 if ( (move_uploaded_file($_FILES['image']['tmp_name'], $newname)) ) {
                                     $project->image = $bd_image;
                                     if ( $project->save() ){ 
-                                        $this->flash->success('Hemos creado el proyecto correctamente');
+                                        //$this->flash->success('Hemos creado el proyecto correctamente');
                                     } else {
-                                        $this->flash->error('No hemos podido actualizar los datos');
+                                        $this->flash->error('No se han actualizado los datos');
                                     }
                                 } else {
                                     $this->flash->error("Error al guardar la imagen.");
@@ -134,9 +134,9 @@ class AdminController extends ControllerBase
                             $project->image = $bd_image;
                             
                             if ( $project->save() ){ 
-                                $this->flash->success('Hemos creado el proyecto correctamente');
+                                //$this->flash->success('Hemos creado el proyecto correctamente');
                             } else {
-                                $this->flash->error('No hemos podido crear el proyecto');
+                                $this->flash->error('No se ha podido crear el proyecto');
                             }
                         } else {
                             $this->flash->error("Error al guardar la imagen.");
@@ -164,7 +164,7 @@ class AdminController extends ControllerBase
             $project = Projects::findFirst($post['id_pjt']);
             
             if ( $project->delete()){ 
-                $this->flash->success('Se ha eliminado el proyecto ');
+                //$this->flash->success('Se ha eliminado el proyecto ');
             } else {
                 $this->flash->error('No se ha podido eliminar el proyecto');
             }

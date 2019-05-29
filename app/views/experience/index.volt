@@ -94,7 +94,7 @@
                                                 <td>{{ item.place }}</td>
                                                 <td>
                                                     {{ form('experience/edit', 'role': 'form') }}
-                                                        <input type='hidden' name='id_project' id='id_project' value={{ item.id_experience }}>
+                                                        <input type='hidden' name='id_experience' value={{ item.id_experience }}>
                                                         <button class="nav-link options" type='submit'>
                                                             <i style='color: #456168;' class="material-icons">edit</i>
                                                         </button>
@@ -102,7 +102,7 @@
                                                 </td>
                                                 <td>
                                                     {{ form('experience/delete', 'role': 'form') }}
-                                                        <input type='hidden' name='id_pjt' id='id_pjt' value={{ item.id_experience }}>
+                                                        <input type='hidden' name='id_experience' value={{ item.id_experience }}>
                                                         <button class="nav-link options" type='submit'>
                                                             <i style='color: #456168;' class="material-icons">delete_sweep</i>
                                                         </button>

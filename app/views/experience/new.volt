@@ -79,7 +79,7 @@
                                         <div class="col-md-2">
                                             <div class="form-group">
                                                 <label class="bmd-label-floating"><b>Color</b></label>
-                                                <input style='height: 25px;'class="form-control" type="color" id='color' required>
+                                                <input style='height: 25px;'class="form-control" type="color" id='color' name='color' required>
                                             </div>
                                         </div>
                                     </div>

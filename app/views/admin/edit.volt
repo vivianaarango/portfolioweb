@@ -173,7 +173,7 @@
                                                 <ul class="nav nav-tabs pull-right" data-tabs="tabs">
                                                     <li class="nav-item">
                                                         <button type="submit" class="nav-link">
-                                                            <i class="material-icons">done</i> Crear proyecto
+                                                            <i class="material-icons">done</i> Editar proyecto
                                                         </button>   
                                                     </li>
                                                 </ul>
