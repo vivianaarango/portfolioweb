@@ -145,33 +145,34 @@
                     <center>
                         <div class='information'>
                             <a href="#" class="">
-                                <div class="button-description">
+                                <div class="button-description" onclick="personalDescription()">
                                     <div class='col-md-1'>
-                                        <img style="width:55px; height:55px;" src="../images/Icono08.png"> 
+                                        <img id='image-1' style="width:55px; height:55px;" src="../images/Icono08.png"> 
                                     </div>
                                     <div class='col-md-1 personal-description'>
-                                        <label class='txt-personal-description-1'>Descripción</label><br>
-                                        <label class='txt-personal-description-1'>personal</label>
+                                        <label id='text-1' class='txt-personal-description-1'>Descripción</label><br>
+                                        <label id='text-2' class='txt-personal-description-1'>personal</label>
                                     </div>
                                 </div>
-
-                                <div class="button-description-1">
+                            </a>    
+                            <a href="#" class="">
+                                <div class="button-description-1" onclick="professionalProfile()">
                                     <div class='col-md-1'>
-                                        <img style="width:55px; height:55px;" src="../images/Icono09.png"> 
+                                        <img id='image-2' style="width:55px; height:55px;" src="../images/Icono09.png"> 
                                     </div>
                                     <div class='col-md-1 personal-description'>
-                                        <label class='txt-personal-description'>Perfil</label><br>
-                                        <label class='txt-personal-description'>profesional</label>
+                                        <label id='text-3' class='txt-personal-description'>Perfil</label><br>
+                                        <label id='text-4' class='txt-personal-description'>profesional</label>
                                     </div>
                                 </div>
                             </a>
                             
-                            <label class='text3-view-2'>
+                            <label id='text-change-1' class='text3-view-2'>
                                 Soy un rockero de corazón, fanático de la música en general, amante del diseño en todas sus vertientes pero en especial en aquellas en las que he
                                 trabajado. Curioso por naturaleza, soy una persona que disfruta investigar y descubrir nuevos conocimientos y experiencias de todo tipo, científico
                                 reprimido (si, me gusta la ciencia), y además con gusto por historias fantásticas.
                             </label>
-                            <label class='text3-view-2'>
+                            <label id='text-change-2' class='text3-view-2'>
                                 Soy en general una persona organizada en extremo, fiel a su palabra, cumplida a más no poder, perseverante cuando se trata de lograr lo que se
                                 propone, muy amigable y llevadera, la persona ideal para trabajar contigo.
                             </label>
@@ -606,6 +607,39 @@
 
         document.getElementById("contact-view").style.height = height+'px';
     });
+
+
+    function personalDescription(){
+        document.getElementById('text-change-2').innerHTML= "Soy en general una persona organizada en extremo, fiel a su palabra, cumplida a más no poder, perseverante cuando se trata de lograr lo que se propone, muy amigable y llevadera, la persona ideal para trabajar contigo."; 
+        document.getElementById('text-change-1').innerHTML= "Soy un rockero de corazón, fanático de la música en general, amante del diseño en todas sus vertientes pero en especial en aquellas en las que he trabajado. Curioso por naturaleza, soy una persona que disfruta investigar y descubrir nuevos conocimientos y experiencias de todo tipo, científico reprimido (si, me gusta la ciencia), y además con gusto por historias fantásticas."; 
+        document.getElementById("image-1").src="../images/Icono08.png";
+        document.getElementById("image-2").src="../images/Icono09.png";
+
+        document.getElementById("text-1").classList.add('txt-personal-description-1');
+        document.getElementById("text-1").classList.remove('txt-personal-description');
+        document.getElementById("text-2").classList.add('txt-personal-description-1');
+        document.getElementById("text-2").classList.remove('txt-personal-description');
+        document.getElementById("text-3").classList.add('txt-personal-description');
+        document.getElementById("text-3").classList.remove('txt-personal-description-1');
+        document.getElementById("text-4").classList.add('txt-personal-description');
+        document.getElementById("text-4").classList.remove('txt-personal-description-1');
+    }
+
+    function professionalProfile(){
+        document.getElementById('text-change-1').innerHTML= 'Profesional en diseño gráfico con énfasis de diseño de interfaces de usuario; experiencia laboral en diseño UI UX, corporativo publicitario y digital: conocimiento en creación de conceptos y estratégias de comunicación, elaboración de material gráfico con enfoque digital. Manejo de sofware de diseño: ilustrator, photoshop, indesign, after effects entre otros. Con orientación al detalle, capacidad de análisis, orientación al resultado y trabajo en equipo.'; 
+        document.getElementById('text-change-2').innerHTML= ''; 
+        document.getElementById("image-1").src="../images/Ico01.png";
+        document.getElementById("image-2").src="../images/Ico02.png";
+
+        document.getElementById("text-1").classList.add('txt-personal-description');
+        document.getElementById("text-1").classList.remove('txt-personal-description-1');
+        document.getElementById("text-2").classList.add('txt-personal-description');
+        document.getElementById("text-2").classList.remove('txt-personal-description-1');
+        document.getElementById("text-3").classList.add('txt-personal-description-1');
+        document.getElementById("text-3").classList.remove('txt-personal-description');
+        document.getElementById("text-4").classList.add('txt-personal-description-1');
+        document.getElementById("text-4").classList.remove('txt-personal-description');
+    }
 
 
     $(document).ready(function () {

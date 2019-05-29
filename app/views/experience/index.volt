@@ -20,13 +20,13 @@
             </div>
             <div class="sidebar-wrapper">
                 <ul class="nav">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="{{url('admin')}}">
                             <i class="material-icons">view_carousel</i>
                             <p>Proyectos</p>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="{{url('experience')}}">
                             <i class="material-icons">work</i>
                             <p>Experiencia y estudios</p>
@@ -49,7 +49,7 @@
                                     <ul class="nav nav-tabs pull-right" data-tabs="tabs">
                                         <li class="nav-item">
                                             <a class="nav-link" href="{{url('experience/new')}}" data-toggle="tab">
-                                            <i class="material-icons">control_point</i> Agregar experiencia o estudio
+                                            <i class="material-icons">control_point</i> Agregar
                                             <div class="ripple-container"></div>
                                             </a>
                                         </li>
@@ -93,16 +93,8 @@
                                                 <td>{{ item.title }}</td>
                                                 <td>{{ item.place }}</td>
                                                 <td>
-                                                    {{ form('experience/view', 'role': 'form') }}
-                                                        <input type='hidden' name='id' id='id' value={{ item.id_project }}>
-                                                        <button class="nav-link options" type='submit'>
-                                                            <i  style='color: #456168;' class="material-icons">visibility</i>
-                                                        </button>
-                                                    {{ end_form() }} 
-                                                </td>
-                                                <td>
                                                     {{ form('experience/edit', 'role': 'form') }}
-                                                        <input type='hidden' name='id_project' id='id_project' value={{ item.id_project }}>
+                                                        <input type='hidden' name='id_project' id='id_project' value={{ item.id_experience }}>
                                                         <button class="nav-link options" type='submit'>
                                                             <i style='color: #456168;' class="material-icons">edit</i>
                                                         </button>
@@ -110,7 +102,7 @@
                                                 </td>
                                                 <td>
                                                     {{ form('experience/delete', 'role': 'form') }}
-                                                        <input type='hidden' name='id_pjt' id='id_pjt' value={{ item.id_project }}>
+                                                        <input type='hidden' name='id_pjt' id='id_pjt' value={{ item.id_experience }}>
                                                         <button class="nav-link options" type='submit'>
                                                             <i style='color: #456168;' class="material-icons">delete_sweep</i>
                                                         </button>

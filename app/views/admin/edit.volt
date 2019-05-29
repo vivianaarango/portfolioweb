@@ -27,7 +27,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{url('admin/experience')}}">
+                        <a class="nav-link" href="{{url('experience')}}">
                             <i class="material-icons">work</i>
                             <p>Experiencia y estudios</p>
                         </a>

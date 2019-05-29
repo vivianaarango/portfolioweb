@@ -20,13 +20,13 @@
             </div>
             <div class="sidebar-wrapper">
                 <ul class="nav">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="{{url('admin')}}">
                             <i class="material-icons">view_carousel</i>
                             <p>Proyectos</p>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="{{url('experience')}}">
                             <i class="material-icons">work</i>
                             <p>Experiencia y estudios</p>
@@ -44,19 +44,10 @@
                             <div class="card">
                                 <div class="card-header card-header-info">
                                     <h4 class="card-title">Crear nueva experiencia o estudio</h4>
-                                    <p class="card-category">Completa los datos</p>
+                                    <p class="card-category"></p>
                                 </div>
                                 <div class="card-body">
                                 {{ form("experience/new", "method":"post", 'enctype': 'multipart/form-data') }}
-
-                                    <div class="row">
-                                        <div class="col-md-5">
-                                            <div class="jumbotron">
-                                                <h1>Bootstrap Colorpicker Demo</h1>
-                                                <input id="demo" type="text" class="form-control" value="rgb(255, 128, 0)" />
-                                            </div>
-                                        </div>
-                                    </div>
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-group">
@@ -85,23 +76,31 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-md-2">
                                             <div class="form-group">
-                                            <label class="bmd-label-floating">Título</label>
-                                            <input type="text" id='title' name='title' class="form-control" required>
+                                                <label class="bmd-label-floating"><b>Color</b></label>
+                                                <input style='height: 25px;'class="form-control" type="color" id='color' required>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                            <label class="bmd-label-floating">Lugar</label>
-                                            <input type="text" id='place' name='place' class="form-control" required>
+                                            <label class="bmd-label-floating"><b>Título</b></label>
+                                            <input type="text" id='title' name='title' class="form-control" required>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                            <label class="bmd-label-floating">Fecha o duración</label>
+                                            <label class="bmd-label-floating"><b>Lugar</b></label>
+                                            <input type="text" id='place' name='place' class="form-control" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                            <label class="bmd-label-floating"><b>Fecha o duración</b></label>
                                             <input type="text" id='date' name='date' class="form-control" required>
                                             </div>
                                         </div>
