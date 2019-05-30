@@ -154,11 +154,56 @@
                     </div>
                 </a>
             </div>
-            <section class='block-view-6'>
-            </section>
+            <!-- <section class='block-view-6'>
+            </section> -->
+            <section class='block-detail-3'>
+                <div class='block-idea-design'>
+                    <div class="col-md-2 main-block pull-right">
+                        <img style="width: 110px; height: 110px;" src="../images/Icono02.png" alt="LOGO">
+                    </div>
+                </div>
+                <div class='block-idea-design-2'>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <center><label class='title-detail-3'>LOGOTYPE</label></center>
+                            <center><img src="../images/Icono10.png" class="down"></center>
+                            <center><label class='name-detail-3'>Sinhala Sangam MN</label></center>
+                            <center><label class='name-detail-3'>(Editada)</label></center>
+                        </div>  
+                        <div class="col-md-6">
+                            <center><label class='title-detail-3'>SLOGAN</label></center>
+                            <center><img src="../images/Icono10.png" class="down"></center>
+                            <center><label class='name-detail-3'>Helvética</label></center>
+                        </div>  
+                    </div>
+                    <div class="row font">
+                        <div class="col-md-6">
+                            <center><label class='text-detail-3'>a b c d e f g h i j k l m n ñ o p q r s t u v w x y z</label></center>
+                            <center><label class='text-detail-3'>A B C D E F G H I J K L M N Ñ O P Q R S T U V W X Y Z</label></center>
+                            <center><label class='text-detail-3'>1 2 3 4 5 6 7 8 9 0</label></center>
+                            <center><label class='text-detail-3'>!”#$%&/()=?¡?’’+´{}-.,;:_[]¨*</label></center>
+                        </div>  
+                        <div class="col-md-6">
+                            <center><label class='text-detail-3'>a b c d e f g h i j k l m n ñ o p q r s t u v w x y z</label></center>
+                            <center><label class='text-detail-3'>A B C D E F G H I J K L M N Ñ O P Q R S T U V W X Y Z</label></center>
+                            <center><label class='text-detail-3'>1 2 3 4 5 6 7 8 9 0</label></center>
+                            <center><label class='text-detail-3'>!”#$%&/()=?¡?’’+´{}-.,;:_[]¨*</label></center>
+                        </div>  
+                    </div>
+                </div>
+            <section>
         </div>
     </div>
 </body>
+
+<!--
+    a b c d e f g h i j k l m n ñ o p q r s t u v w x y
+z
+A B C D E F G H I J K L M N Ñ O P Q R S T
+U V W X Y Z
+1 2 3 4 5 6 7 8 9 0
+!”#$%&/()=?¡?’’+´{}-.,;:_[]¨*
+-->
 
 </html>
 

@@ -643,7 +643,7 @@
     background-color: #90024C;
     color: #ffffff;
     font-size: 18px;
-    width: 28%;
+    width: 22%;
     border-radius: 13px;
 }
 
@@ -652,8 +652,60 @@
     margin-left: 45%;
 }
 
-/* Styles specific for this example */
+/* view 3 */
+.block-detail-3 {
+    padding-top: 12%;
+}
 
+.block-idea-design {
+    width: 63%!important;
+    margin-left: 16%;
+    padding-top: 2%;
+    height: 175px;
+    border-radius: 45px 45px 45px 45px;
+    -moz-border-radius: 45px 45px 45px 45px;
+    -webkit-border-radius: 45px 45px 45px 45px;
+    border: 1px solid #adaeaf;;
+
+    background: #6e6d6e;
+    background: -moz-linear-gradient(left, #6e6d6e 0%, #6b6a6b 29%, #8a888a 41%, #999999 45%, #a8a6a8 49%, #bdbdbd 55%, #e0e0e0 67%, #ffffff 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, #6e6d6e), color-stop(29%, #6b6a6b), color-stop(41%, #8a888a), color-stop(45%, #999999), color-stop(49%, #a8a6a8), color-stop(55%, #bdbdbd), color-stop(67%, #e0e0e0), color-stop(100%, #ffffff));
+    background: -webkit-linear-gradient(left, #6e6d6e 0%, #6b6a6b 29%, #8a888a 41%, #999999 45%, #a8a6a8 49%, #bdbdbd 55%, #e0e0e0 67%, #ffffff 100%);
+    background: -o-linear-gradient(left, #6e6d6e 0%, #6b6a6b 29%, #8a888a 41%, #999999 45%, #a8a6a8 49%, #bdbdbd 55%, #e0e0e0 67%, #ffffff 100%);
+    background: -ms-linear-gradient(left, #6e6d6e 0%, #6b6a6b 29%, #8a888a 41%, #999999 45%, #a8a6a8 49%, #bdbdbd 55%, #e0e0e0 67%, #ffffff 100%);
+    background: linear-gradient(to right, #6e6d6e 0%, #6b6a6b 29%, #8a888a 41%, #999999 45%, #a8a6a8 49%, #bdbdbd 55%, #e0e0e0 67%, #ffffff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6e6d6e', endColorstr='#ffffff', GradientType=1 );
+
+}
+
+.block-idea-design-2 {
+    width: 63%!important;
+    margin-left: 16%;
+    padding-top: 2%;
+    height: 185px;
+}
+
+.title-detail-3 {
+    color: #6f6f6f;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.name-detail-3 {
+    color: #6f6f6f;
+    font-size: 18px;
+}
+
+.text-detail-3 {
+    color: #6f6f6f;
+    font-size: 14px;
+}
+
+.font {
+    margin-top: 2%;
+}
+
+/* Styles specific for this example */
 
 .text-container {
     width: 35%;
