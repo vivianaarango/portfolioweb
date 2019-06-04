@@ -14690,7 +14690,7 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
 }
 
 .sidebar .logo {
-  padding: 15px 0px;
+  padding: 25px 0px;
   margin: 0;
   display: block;
   position: relative;
@@ -18867,6 +18867,12 @@ input[type="file"] {
   display: block;
   font-size: 13px;
   color:#495057;
+}
+
+.sidebar .nav .nav-item.active-pro {
+  position: absolute;
+  width: 100%;
+  bottom: 20%;
 }
 
 /*# sourceMappingURL=dashboard-free.css.map */

@@ -15,8 +15,7 @@
     <div class="wrapper ">
         <div class="sidebar" data-color="purple" data-background-color="white" >
             <div class="logo">
-                <center><a href="https://www.ideadesign.com.co" target='_blank'><img border="0" src="../images/Icono02.png" width="100" height="100"></a></center>
-                <a href="https://www.ideadesign.com.co" target='_blank' class="simple-text logo-normal">Idea Design</a>
+                <center><a href={{url('web/index')}} target='_blank'><img border="0" src="../images/Log02.png" width="250" height="100"></a></center>
             </div>
             <div class="sidebar-wrapper">
                 <ul class="nav">
@@ -44,7 +43,7 @@
                             <div class="card">
                                 <div class="card-header card-header-info">
                                 <h4 class="card-title">Editar Proyecto</h4>
-                                <p class="card-category">Completa tu proyecto</p>
+                                <p class="card-category"></p>
                                 </div>
                                 <div class="card-body">
                                 {{ form("admin/edit", "method":"post", 'enctype': 'multipart/form-data') }}
@@ -173,7 +172,7 @@
                                                 <ul class="nav nav-tabs pull-right" data-tabs="tabs">
                                                     <li class="nav-item">
                                                         <button type="submit" class="nav-link">
-                                                            <i class="material-icons">done</i> Editar proyecto
+                                                            <i class="material-icons">done</i> Editar
                                                         </button>   
                                                     </li>
                                                 </ul>

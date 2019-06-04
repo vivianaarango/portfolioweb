@@ -49,7 +49,8 @@ class SecurityPlugin extends Plugin
 				'companies'    => ['index', 'search', 'new', 'edit', 'save', 'create', 'delete'],
 				'products'     => ['index', 'search', 'new', 'edit', 'save', 'create', 'delete'],
 				'producttypes' => ['index', 'search', 'new', 'edit', 'save', 'create', 'delete'],
-				'invoices'     => ['index', 'profile']
+				'admin'      => ['index', 'view', 'edit', 'delete', 'new'],
+				'experience' => ['index', 'view', 'edit', 'delete', 'new']
 			];
 			foreach ($privateResources as $resource => $actions) {
 				$acl->addResource(new Resource($resource), $actions);
@@ -57,8 +58,7 @@ class SecurityPlugin extends Plugin
 
 			//Public area resources
 			$publicResources = [
-				'index'      => ['index'],
-				'admin'      => ['index', 'view', 'edit', 'delete', 'new'],
+				'index'      => ['index', 'login'],
 				'web'		 => ['index', 'sendemail', 'detail'],
 				'experience' => ['index', 'view', 'edit', 'delete', 'new'],
 			];
@@ -109,6 +109,7 @@ class SecurityPlugin extends Plugin
 		$controller = $dispatcher->getControllerName();
 		$action = $dispatcher->getActionName();
 
+
 		$acl = $this->getAcl();
 
 		if (!$acl->isResource($controller)) {
@@ -116,17 +117,15 @@ class SecurityPlugin extends Plugin
 				'controller' => 'errors',
 				'action'     => 'show404'
 			]);
-
+			
 			return false;
 		}
 
 		$allowed = $acl->isAllowed($role, $controller, $action);
 		if (!$allowed) {
-			$dispatcher->forward([
-				'controller' => 'errors',
-				'action'     => 'show401'
-			]);
-                        $this->session->destroy();
+
+			$this->response->redirect('index/login');
+			$this->session->destroy();
 			return false;
 		}
 	}

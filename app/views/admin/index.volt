@@ -15,8 +15,7 @@
     <div class="wrapper ">
         <div class="sidebar" data-color="purple" data-background-color="white" >
             <div class="logo">
-                <center><a href={{url('web/index')}} target='_blank'><img border="0" src="images/Icono02.png" width="100" height="100"></a></center>
-                <a href={{url('web/index')}} target='_blank' class="simple-text logo-normal">Idea Design</a>
+                <center><a href={{url('web/index')}} target='_blank'><img border="0" src="images/Log02.png" width="250" height="100"></a></center>
             </div>
             <div class="sidebar-wrapper">
                 <ul class="nav">
@@ -32,6 +31,14 @@
                             <p>Experiencia y estudios</p>
                         </a>
                     </li>
+                    {{ form('index/logout', 'role': 'form') }}
+                        <li class="nav-item active-pro" >
+                            <a class="nav-link" href="{{url('index/logout')}}">
+                                <i class="material-icons">power_settings_new</i>
+                                <p>Cerrar sesión</p>
+                            </a>
+                        </li>
+                    {{ end_form() }} 
                 </ul>
             </div>
         </div>
