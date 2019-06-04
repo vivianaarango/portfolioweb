@@ -156,22 +156,27 @@
             <!-- <section class='block-view-6'>
             </section> -->
             <section class='block-detail-3'>
-                <div class='block-idea-design'>
-                    <div class="col-md-2 main-block pull-right">
-                        <img style="width: 110px; height: 110px;" src="../images/Icono02.png" alt="LOGO">
+                <div class="row">
+                    <div class='block-idea-design'>
+                        <div class="col-lg-4 col-md-5 main-block logo-1">
+                            <img style="width: 250px; height: 100px;" src="../images/Log01.png" alt="LOGO">
+                        </div>
+                        <div class="col-lg-4 col-md-5 main-block pull-right logo-2">
+                            <img style="width: 250px; height: 100px;" src="../images/Log02.png" alt="LOGO">
+                        </div>
                     </div>
                 </div>
                 <div class='block-idea-design-2'>
                     <div class="row">
                         <div class="col-md-6">
                             <center><label class='title-detail-3'>LOGOTYPE</label></center>
-                            <center><img src="../images/Icono10.png" class="down"></center>
+                            <center><img src="../images/Ico03.png" class="down"></center>
                             <center><label class='name-detail-3'>Sinhala Sangam MN</label></center>
                             <center><label class='name-detail-3'>(Editada)</label></center>
                         </div>  
                         <div class="col-md-6">
                             <center><label class='title-detail-3'>SLOGAN</label></center>
-                            <center><img src="../images/Icono10.png" class="down"></center>
+                            <center><img src="../images/Ico03.png" class="down"></center>
                             <center><label class='name-detail-3'>Helvética</label></center>
                         </div>  
                     </div>
@@ -194,15 +199,6 @@
         </div>
     </div>
 </body>
-
-<!--
-    a b c d e f g h i j k l m n ñ o p q r s t u v w x y
-z
-A B C D E F G H I J K L M N Ñ O P Q R S T
-U V W X Y Z
-1 2 3 4 5 6 7 8 9 0
-!”#$%&/()=?¡?’’+´{}-.,;:_[]¨*
--->
 
 </html>
 
