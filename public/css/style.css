@@ -37,7 +37,7 @@
     color: #73A1AC;
     font-weight: bold;
     font-size: 18px;
-    background-color:#5d687b6e;
+    background-color:#5d687b1c;
 }
 
 .contact-div {
@@ -143,7 +143,7 @@
 }
 
 .information {
-    border: 1px solid #939393;
+   /*border: 1px solid #939393;*/
     border-radius: 25px;
     height: 220px;
     width: 75%;
@@ -371,7 +371,7 @@
 }
 
 .btn-view-more {
-    width: 13%;
+    width: 30%;
     height: 35px;
     border-radius: 13px;
     font-size: 15px;
@@ -551,6 +551,12 @@
     padding-top: 1.5%;
 } 
 
+.description-footer {
+    font-size: 11px;
+    color: #c7c7c7!important;
+    font-weight: -100;
+}
+
 .section-contact-1 {
     padding-left: 30%;
     padding-right: 5%;
@@ -621,6 +627,38 @@
 .menu-down-detail-1 {
     text-align: center;
     padding-top: 4%;
+}
+
+/* new view 2 */
+
+.text-detail2 {
+    color:#c7c7c7;
+    font-size: 15px;
+}
+
+.block-detail-2-new {
+    padding-top: 13%;
+    text-align: center;
+    width: 60%;
+    margin-left: 25%;
+}
+
+.carousel-detail {
+    padding-top: 2%;
+}
+
+.carousel-img {
+    width: 60%;
+}
+
+.carousel-indicators .active {
+    background-color: #791355;
+    border: 1px solid #791355!important;
+}
+
+.carousel-indicators li {
+    background-color: #73A1AC;
+    border: 1px solid #73A1AC!important;
 }
 
 /* view 2 */

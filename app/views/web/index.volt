@@ -83,7 +83,7 @@
                     </div>
                     <a href="#">
                         <div class="col-md-1 contact-div-1">
-                            <img style="width:50px; height:50px;" src="../images/Icono07.png" alt="">
+                            <img style="width:50px; height:50px;" src="../images/WhatsappIcon.png" alt="">
                         </div>
                         <div class="col-md-2 contact-div">
                             <label class='txt-whatsapp'>Inicia una</label><br>
@@ -432,6 +432,12 @@
                             {% endif %}
                             <div class='text3-view-4 text-container-1'>{{ item.text4 }}</div>
                         </section>
+
+                        <div class="row btn-down container-view-more" style='padding-left: 8%'>
+                            <div class='block-view-more'>
+                                <button type="button" class='btn btn-view-more border-blue'>Ver más</button>
+                            </div>
+                        </div>
                     {% else %}
                         <section class='block-view-6'>
                             <label class='text1-view-6'>{{ item.text1 }}</label><br>
@@ -441,6 +447,12 @@
                             {% endif %}
                             <div class='text3-view-6 text-container-1'>{{ item.text4 }}</div>
                         </section>
+
+                        <div class="row btn-down container-view-more">
+                            <div class='block-view-more' style='padding-top: 2%; padding-left: 8%'>
+                                <button type="button" class='btn btn-view-more border-purple'>Ver más</button>
+                            </div>
+                        </div>
                     {% endif %}
                 {% endif %}
 
@@ -454,6 +466,12 @@
                             {% endif %}
                             <div class='text3-view-5 text-container'>{{ item.text4 }}</div>
                         </section>
+
+                        <div class="row btn-down container-view-more">
+                            <div class='block-view-more' style='padding-top: 2%; text-align: right; padding-right: 9%;'>
+                                <button type="button" class='btn btn-view-more border-purple'>Ver más</button>
+                            </div>
+                        </div>
                     {% else %}
                         <section class='block-view-7'>
                             <label class='text1-view-7'>{{ item.text1 }}</label><br>
@@ -463,21 +481,13 @@
                             {% endif %}
                             <div class='text3-view-7 text-container'>{{ item.text4 }}</div>
                         </section>
+
+                        <div class="row btn-down container-view-more" style='text-align: right; padding-right: 9%;'>
+                            <div class='block-view-more'>
+                                <button type="button" class='btn btn-view-more border-blue'>Ver más</button>
+                            </div>
+                        </div>
                     {% endif %}
-                {% endif %}
-                
-                {% if item.color == 1 %}
-                    <div class="row btn-down container-view-more">
-                        <div class='block-view-more'>
-                            <center><button type="button" class='btn btn-view-more border-blue'>Ver más</button></center>
-                        </div>
-                    </div>
-                {% else %}
-                    <div class="row btn-down container-view-more">
-                        <div class='block-view-more' style='padding-top: 2%;'>
-                            <center><button type="button" class='btn btn-view-more border-purple'>Ver más</button></center>
-                        </div>
-                    </div>
                 {% endif %}
             </div>
         {% endfor %}
@@ -543,39 +553,39 @@
                         <center class="col-md-9 section-contact-1">
                          
                                 <div class="col-md-3">
-                                    <img style="width:30px; height:30px;" src="../images/Icono03.png" alt="LOGO"><br>
-                                    <label class='description'>(+57)318 392 2306</label>
+                                    <img style="width:30px; height:30px;" src="../images/TelFooter.png" alt="LOGO"><br>
+                                    <label class='description-footer'>(+57)318 392 2306</label>
                                 </div>
                                 <div class="col-md-3">
-                                    <img style="width:30px; height:30px;" src="../images/Icono04.png" alt="LOGO"><br>
-                                    <label class='description'>idmr13@gmail.com</label>
+                                    <img style="width:30px; height:30px;" src="../images/CorreoFooter.png" alt="LOGO"><br>
+                                    <label class='description-footer'>idmr13@gmail.com</label>
                                 </div>
                                 <div class="col-md-3">
-                                    <img style="width:30px; height:30px;" src="../images/Icono05.png" alt="LOGO"><br>
-                                    <label class='description'>/iDeaDavid</label>
+                                    <img style="width:30px; height:30px;" src="../images/BehanceFooter.png" alt="LOGO"><br>
+                                    <label class='description-footer'>/iDeaDavid</label>
                                 </div>
                                 <div class="col-md-3">
-                                    <img style="width:30px; height:30px;" src="../images/Icono06.png" alt="LOGO"><br>
-                                    <label class='description'>/david_mr18</label>
+                                    <img style="width:30px; height:30px;" src="../images/PinterestFooter.png" alt="LOGO"><br>
+                                    <label class='description-footer'>/david_mr18</label>
                                 </div>       
                          
                         </center>
                         <div class="col-md-3 section-contact-2">
                             <div class="col-md-2">
-                                <a href="#view-1"><img src="../images/Icono10.png" class=""></a>
+                                <a href="#view-1"><img src="../images/ScrollUpFooter.png" style="width: 45px; height: 45px;"></a>
                             </div>
                             <div class="col-md-1" style='padding-left: 12%;'>
-                                <a href=''><img style="width:50px; height:50px;" src="../images/Icono07.png" alt=""></a>
+                                <a href=''><img style="width:50px; height:50px;" src="../images/WhatsappIcon.png" alt=""></a>
                             </div>
                         </div>
                     </div>
                     <center><hr class="hr2"></center>
                     <div class='row' style='padding-left:30%; padding-right:1%'>
                         <div class="col-md-1" style='width:5%;'>
-                            <img style="width:30px; height:30px;" src="../images/Icono05.png" alt="LOGO"><br>
+                            <img style="width:30px; height:30px;" src="../images/LogoIDFooter.png" alt="LOGO"><br>
                         </div>
                         <div class="col-md-1" style='width:60%'>
-                            <label class='description-footer'>Diseñado por iDea Design, desarrollado por Lorem Ipsum, derechos reservados.</label>
+                            <label class='description-footer'>Diseñado por iDea Design, desarrollado por Viviana Arango, derechos reservados.</label>
                         </div>
                     </div>
                 </div>

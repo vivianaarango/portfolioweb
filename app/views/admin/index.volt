@@ -114,14 +114,7 @@
                                                 <td>{{ item.id_project }}</td>
                                                 <td>{{ item.text1 }} - {{ item.text2 }}</td>
                                                 <td>{{ item.text4}}</td>
-                                                <td>
-                                                    {{ form('admin/view', 'role': 'form') }}
-                                                        <input type='hidden' name='id' id='id' value={{ item.id_project }}>
-                                                        <button class="nav-link options" type='submit'>
-                                                            <i  style='color: #456168;' class="material-icons">visibility</i>
-                                                        </button>
-                                                    {{ end_form() }} 
-                                                </td>
+                                              
                                                 <td>
                                                     {{ form('admin/edit', 'role': 'form') }}
                                                         <input type='hidden' name='id_project' id='id_project' value={{ item.id_project }}>
