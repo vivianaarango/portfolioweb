@@ -703,6 +703,36 @@
     margin-top: 2%;
 }
 
+/* view 4*/
+
+.block-detail-4 {
+    padding-top: 18%;
+    padding-left: 18%;
+    padding-right: 18%;
+}
+
+.square1{ 
+    width:110px; 
+    height:110px; 
+    background:#a01259;
+} 
+
+.square2{ 
+    width:110px; 
+    height:110px; 
+    background:#a7c6d8;
+} 
+
+.detail4 {
+    color: #a01259;
+    font-size: 17px;
+}
+
+.detail42 {
+    color: #a7c6d8;
+    font-size: 17px;
+}
+
 /* Styles specific for this example */
 
 .text-container {
