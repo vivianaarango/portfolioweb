@@ -49,7 +49,7 @@ class SecurityPlugin extends Plugin
 				'companies'    => ['index', 'search', 'new', 'edit', 'save', 'create', 'delete'],
 				'products'     => ['index', 'search', 'new', 'edit', 'save', 'create', 'delete'],
 				'producttypes' => ['index', 'search', 'new', 'edit', 'save', 'create', 'delete'],
-				'admin'      => ['index', 'view', 'edit', 'delete', 'new'],
+				'admin'      => ['index', 'detail', 'edit', 'delete', 'new'],
 				'experience' => ['index', 'view', 'edit', 'delete', 'new']
 			];
 			foreach ($privateResources as $resource => $actions) {

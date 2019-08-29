@@ -81,7 +81,7 @@
                     <div class="col-md-1">
                         <center><label style='padding-top: 40%; font-size: 15px;' class='description'>o</label></center>
                     </div>
-                    <a href="#">
+                    <a href="https://wa.me/573183922306" target="_blank">
                         <div class="col-md-1 contact-div-1">
                             <img style="width:50px; height:50px;" src="../images/WhatsappIcon.png" alt="">
                         </div>
@@ -548,7 +548,7 @@
                         <center><button type="submit" class='btn btn-curriculum'>Enviar</button></center>
                     </div>
                 {{ end_form() }}
-                <div class='footer'>
+                <section class='footer'>
                     <div class='row footer-contact'>
                         <center class="col-md-9 section-contact-1">
                          
@@ -575,17 +575,17 @@
                                 <a href="#view-1"><img src="../images/ScrollUpFooter.png" style="width: 45px; height: 45px;"></a>
                             </div>
                             <div class="col-md-1" style='padding-left: 12%;'>
-                                <a href=''><img style="width:50px; height:50px;" src="../images/WhatsappIcon.png" alt=""></a>
+                                <a href='https://wa.me/573183922306' target="_blank"><img style="width:50px; height:50px;" src="../images/WhatsappIcon.png" alt=""></a>
                             </div>
                         </div>
                     </div>
                     <center><hr class="hr2"></center>
                     <div class='row' style='padding-left:30%; padding-right:1%'>
-                        <div class="col-md-1" style='width:5%;'>
+                        <div class="col-md-1 col-md-offset-1" style='width:5%;'>
                             <img style="width:30px; height:30px;" src="../images/LogoIDFooter.png" alt="LOGO"><br>
                         </div>
-                        <div class="col-md-1" style='width:60%'>
-                            <label class='description-footer'>Diseñado por iDea Design, desarrollado por Viviana Arango, derechos reservados.</label>
+                        <div class="col-md-1" style='width:45%'>
+                            <center><label class='description-footer'>Diseñado por iDea Design, desarrollado por Viviana Arango, derechos reservados.</label></center>
                         </div>
                     </div>
                 </div>
@@ -602,10 +602,9 @@
 <script src="../js/viewScroller.js"></script>
 
 <script>
-    $(document).ready(function() {
-        
-        let height = window.innerHeight;
 
+    $(document).ready(function() {
+        let height = window.innerHeight;
         // Sets viewScroller
         $('.mainbag').viewScroller({
             animSpeedMainView: 600,
@@ -616,6 +615,11 @@
         });
 
         document.getElementById("contact-view").style.height = height+'px';
+
+        $(window).resize(function() {
+            let height = window.innerHeight;
+            document.getElementById("contact-view").style.height = height+'px';
+        });
     });
 
 

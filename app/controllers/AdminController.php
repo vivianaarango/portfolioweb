@@ -19,11 +19,6 @@ class AdminController extends ControllerBase
     }
 
 
-    public function viewAction()
-    {   
-  
-    }
-
     /*
     Editar proyecto
     */
@@ -175,5 +170,82 @@ class AdminController extends ControllerBase
 		} else {
 			return $this->response->redirect('admin'); 
 		}
+    }
+
+    public function detailAction()
+    {   
+        if ($this->request->isPost()){
+
+            $post = $this->request->getPost();
+            if ( isset($post['id_project']) ) {
+                $project = Projects::findFirst($post['id_project']);
+                
+                if ( isset($project->id_project) ){
+                    $this->view->project = $project;
+
+                    if (  isset($post['qualification']) ) {
+
+                        $project_detail = new ProjectDetail();
+                        $project_detail->id_projet = $post['id_project'];
+                        $project_detail->description = $post['description'];
+                        $project_detail->text_slider = $post['slider_text'];
+                        $project_detail->color = $post['color'];
+                        $project_detail->rights = isset($post['rights']) ? $post['rights'] : '';
+                        $project_detail->qualification = $post['qualification'];
+                     
+                        if ( $project_detail->save() ) {
+
+                            if ( (!empty($_FILES["image"])) && ($_FILES['image']['error'] == 0) ) {
+                                //$filename = $post['text1'];
+                    
+                                $filename = $_FILES['image']['name'];
+                                $ext = substr($filename, strrpos($filename, '.') + 1);
+                                $file_parts = pathinfo($_FILES["image"]["name"]);
+                                $ext = $file_parts['extension'];
+                
+                                if ( ( $ext=="png" || $ext=="jpg" || $ext=="jpeg") && $_FILES["image"]["size"] < 10000000 ) {
+                                    
+                                    $newname = __DIR__ . '/../../public/images/proyectos/'.$filename;
+                                    $bd_image = '../images/proyectos/'.$filename;
+                                   
+                                    if (!file_exists($newname)) {
+                                
+                                        if ( (move_uploaded_file($_FILES['image']['tmp_name'], $newname)) ) {
+                                        
+                                            $image = new SliderImage();
+                                            $image->id_project = $project_detail->id;
+                                            $image->img = $bd_image;
+
+
+                                            if ( $image->save() ){ 
+                                                //$this->flash->success('Hemos creado el proyecto correctamente');
+                                            } else {
+                                                $this->flash->error("Error al guardar la imagen.");
+                                            }
+                                        } else {
+                                            $this->flash->error("Error al guardar la imagen.");
+                                        }
+                                    } else {
+                                        $this->flash->error("Error: Archivo ".$_FILES["image"]["name"]." ya existe");
+                                    }
+                                } else {
+                                    $this->flash->error("Error: Solo se pueden cargar imagenes .jpg con un tamaño por debajo de 350Kb");
+                                }
+                            }
+
+                            $this->response->redirect('admin');
+                        } else {
+                            $this->flash->error("Error al guardar el detalle del proyecto.");
+                            $this->response->redirect('admin');
+                        }
+                    }
+
+                } else {
+                    return $this->response->redirect('admin'); 
+                }
+            }
+		} else {
+			return $this->response->redirect('admin'); 
+		}  
     }
 }

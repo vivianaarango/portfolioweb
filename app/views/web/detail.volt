@@ -69,7 +69,7 @@
                     <a class="vs-mainview-next"><img src="../images/Icono10.png" class="down"></a>
                 </div>
                 <div class='col-md-1 col-md-offset-3'>
-                    <a class="pull-right" href=''><img style="width:50px; height:50px;" src="../images/WhatsappIcon.png" alt=""></a>
+                    <a class="pull-right" href='https://wa.me/573183922306' target="_blank"><img style="width:50px; height:50px;" src="../images/WhatsappIcon.png" alt=""></a>
                 </div>
             </div>
         </div>
@@ -170,7 +170,7 @@
                             <button type="button" class='btn btn-clic-here'>Clic aquí</button>
                         </div>
                         <div class='col-md-1' style="width:5%">
-                            <a href=''><img style="width:45px; height:45px;" src="../images/WhatsappIcon.png" alt=""></a>
+                            <a href='https://wa.me/573183922306' target="_blank"><img style="width:45px; height:45px;" src="../images/WhatsappIcon.png" alt=""></a>
                         </div>
                     </div>
                 </div>
@@ -200,17 +200,17 @@
                                 <a href="#view-1"><img src="../images/ScrollUpFooter.png" style="width: 45px; height: 45px;"></a>
                             </div>
                             <div class="col-md-1" style='padding-left: 12%;'>
-                                <a href=''><img style="width:50px; height:50px;" src="../images/WhatsappIcon.png" alt=""></a>
+                                <a href='https://wa.me/573183922306' target="_blank"><img style="width:50px; height:50px;" src="../images/WhatsappIcon.png" alt=""></a>
                             </div>
                         </div>
                     </div>
                     <center><hr class="hr2"></center>
                     <div class='row' style='padding-left:30%; padding-right:1%'>
-                        <div class="col-md-1" style='width:5%;'>
+                        <div class="col-md-1 col-md-offset-1" style='width:5%;'>
                             <img style="width:30px; height:30px;" src="../images/LogoIDFooter.png" alt="LOGO"><br>
                         </div>
-                        <div class="col-md-1" style='width:60%'>
-                            <label class='description-footer'>Diseñado por iDea Design, desarrollado por Viviana Arango, derechos reservados.</label>
+                        <div class="col-md-1" style='width:45%'>
+                            <center><label class='description-footer'>Diseñado por iDea Design, desarrollado por Viviana Arango, derechos reservados.</label></center>
                         </div>
                     </div>
                 </div>
@@ -230,7 +230,6 @@
     $(document).ready(function() {
         
         let height = window.innerHeight;
-        console.log('height:'+height);
         // Sets viewScroller
         $('.mainbag').viewScroller({
             animSpeedMainView: 700,

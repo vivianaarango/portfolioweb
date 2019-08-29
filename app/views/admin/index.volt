@@ -131,6 +131,14 @@
                                                         </button>
                                                     {{ end_form() }} 
                                                 </td>
+                                                <td>
+                                                    {{ form('admin/detail', 'role': 'form') }}
+                                                        <input type='hidden' name='id_project' id='id_project' value={{ item.id_project }}>
+                                                        <button class="nav-link options" type='submit'>
+                                                            <i style='color: #456168;' class="material-icons">details</i>
+                                                        </button>
+                                                    {{ end_form() }} 
+                                                </td>
                                             </tr>
                                         {% endfor %}
                                     </tbody>
